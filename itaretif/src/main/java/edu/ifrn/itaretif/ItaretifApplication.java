@@ -1,4 +1,4 @@
-package edu.ifrn.itaretif.itaretif;
+package edu.ifrn.itaretif;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
