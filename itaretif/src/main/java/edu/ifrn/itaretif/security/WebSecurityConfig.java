@@ -1,4 +1,4 @@
-package com.itaretif.security;
+package edu.ifrn.itaretif.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
