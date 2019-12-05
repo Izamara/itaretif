@@ -8,8 +8,8 @@ import edu.ifrn.itaretif.models.Usuario;
 @Repository
 public interface UsuarioRepository extends CrudRepository<Usuario, Long> {
 
-	Usuario finByMatricula(String matricula);
+//	Usuario finByMatricula(String matricula);
 	
-	Iterable<Usuario> findByNomeContaining(String nome);
+//	Iterable<Usuario> findByNomeContaining(String nome);
 	
 }
