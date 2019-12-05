@@ -1,29 +1,40 @@
 package edu.ifrn.itaretif.models;
 
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails; 
+import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
-public class Usuario implements UserDetails{
-	
+public class Usuario implements UserDetails {
+
+	private static final long serialVersionUID = -3396605080876187396L;
+
 	@Id
-	private String Login; 
-	
+	private String login;
+
 	private String nome;
-	
+
 	private String senha;
 
+	@ManyToMany
+	@JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "login"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "nomeRole"))
+
+	private List<Role> roles;
+
 	public String getLogin() {
-		return Login;
+		return login;
 	}
 
 	public void setLogin(String login) {
-		Login = login;
+		this.login = login;
 	}
 
 	public String getNome() {
@@ -40,6 +51,15 @@ public class Usuario implements UserDetails{
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+
+	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
 	}
 
 	@Override
@@ -57,7 +77,7 @@ public class Usuario implements UserDetails{
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return this.Login;
+		return this.login;
 	}
 
 	@Override
@@ -83,14 +103,5 @@ public class Usuario implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}
-	
-	
 
-	   
-
-} 
-	
-	
-	
-
-
+}

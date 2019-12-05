@@ -25,13 +25,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     	
     	http.authorizeRequests().antMatchers("/*").permitAll();
     	
-//	     http.csrf().disable().authorizeRequests()
-//	    .antMatchers(HttpMethod.GET, "/").permitAll()
-//	    .anyRequest().authenticated()
-//	    .and().formLogin().permitAll()
-//	    
-//	    .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
-//	    
+	     http.csrf().disable().authorizeRequests()
+	    .antMatchers(HttpMethod.GET, "/").permitAll()
+    	.antMatchers(HttpMethod.GET, "/").hasRole("ADMIN")
+    	.antMatchers(HttpMethod.POST, "/").hasRole("ADMIN")
+	    .anyRequest().authenticated()
+    	.and().formLogin().permitAll()
+    	.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
+	    
 
 }
 
