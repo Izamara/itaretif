@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+
+	</head>
+	<body> 
+	<h1>Login Form</h1>
+	
+	<form th:if="@{/login}" th:object="${loginForm}" method="post">
+	    <label for="user">Matricula</label>
+	    <input type="text" id="username" name="username">
+	    
+	    <label for="password">Senha</label>
+	    <input type="password" id="password" name="password">
+	   
+	    
+	    <br/>
+	    <input type="submit" value="Entrar"/>
+	    
+	    </form>
+	
+	
+	</body>
+	</html>
