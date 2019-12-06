@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:th="http://thymeleaf.org"
-	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html>
 <head>
 	<meta charset="utf-8">
 	<title>ItaretIF</title>
 	<link rel="shortcut icon" href="img/icon.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="DPI.css">
 
 
@@ -16,14 +14,14 @@
 <div>
  <div class="parallax">
 	<div id="menu">
-    	<a href="Inicio.html">
+    	<a href="/">
             <img class="icon_1" src="img/icon.png"></img>
         </a>
     	<a class="background" href="/campus">O campus</a>
-    	<a class="background" href="/regras">Regras</a>
-    	<a class="background" href="/lajes">Lajes/RN</a>
-      <a class="background" href="/mapeamento">Mapeamento</a>
-      <a class="background" href="/sobre">Sobre nós</a> 
+        <a class="background" href="/regras">Regras</a>
+        <a class="background" href="/lajes">Lajes/RN</a>
+        <a class="background" href="/mapeamento">Mapeamento</a>
+        <a class="background" href="/sobre">Sobre nós</a>
   	</div>
 
   	<div class="center">
@@ -41,16 +39,16 @@
     	<p>A ideia do projeto surgiu a partir do Desenvolvimento do Projeto Integrador (DPI, matéria técnica), que é uma das disciplinas do nosso curso. Dentre inúmeras possibilidades, resolvemos trabalhar com um site que trouxesse as informações que já estão expostas em todo o portal.</p>
     	<p>Se você pode ver e utilizar tudo isso aqui, isso significa que conseguimos! O nosso projeto deu certo. E é um prazer para toda nossa equipe que você possa desfrutar de tudo isso!</p>
 
-    	<div class="container_0">
+    	<div class="container_0" style="margin-left: 200px;">
 
             <figure>
-		      <a href="https://www.instagram.com/ana.sara1417/"><img class="criador" src="img/sara.png"></a>
+		      <a href="https://www.instagram.com/ana.sara1417/"><img class="criador" src="img/nasara.png"></a>
               <figcaption>@ana.sara1417</figcaption>
             </figure>
 
             <figure>
-		      <a href="https://www.instagram.com/z370i"><img class="criador" src="img/isa.png"></a>
-              <figcaption>@z370i</figcaption>
+		      <a href=""><img class="criador" src="img/evalter.png"></a>
+              <figcaption>@z370047t3</figcaption>
             </figure>
 
             <figure>
@@ -59,57 +57,13 @@
             </figure>
 
             <figure>
-		      <a href="https://www.instagram.com/thisiswillthisisme/"><img class="criador" src="img/will.png"></a>
-              <figcaption>@thisiswillthisisme</figcaption>
+		      <a href="https://www.instagram.com/wklzz/"><img class="criador" src="img/will.png"></a>
+              <figcaption>@wklzz</figcaption>
             </figure>
 
-		</div>
-		<p>Nossos orientadores:</p>
-		<div class="container_0">
-
-            <figure>
-		      <a href=""><img class="criador" src="img/fernando.png"></a>
-              <figcaption>Fernando Soares</figcaption>
-            </figure>
-
-            <figure>
-		      <a href=""><img class="criador" src="img/dannylo.png"></a>
-              <figcaption>Dannylo Egidio</figcaption>
-            </figure>
-
-		</div>
 		</div>
 		
-		<div class="container_">
-		<center><h1 class="color">Comentários e sugestões</h1></center>
-		<br>
-		<br>
-		<p>Para que o nosso site tenha sua cara, precisamos da sua ajuda! Para isso, basta apenas nos dar o seu feedback sobre o portal e/ou trazer sugestões sobre o que achar necessário.</p>
-		<div class="form-group">
-			<form class="container" method="post">
-				<textarea type="text" value="" name="conteudo" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deixa um comentário ou uma sugestão pra gente ;)"></textarea> 
-				<br>
-				<button action="/sobre" style="margin-left: 93%;" type="submit" class="btn btn-outline-success">Opinar</button>
-				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-			</form>
-			
-			<table class="table">
-				<thead>
-					<tr>
-						<th>Comentários/Sugestões:</th>
-					</tr>
-				</thead>
-				
-				<tbody>
-					<tr th:each="comentario : ${comentarios}">
-					<td><span th:text="${comentario.conteudo}"></span></td>
-					</tr>
-				</tbody>
-			</table>
-			
-		</div>
-		</div>
-	</div>
+    </div>
 
 </body>
 
