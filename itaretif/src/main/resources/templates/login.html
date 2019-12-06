@@ -9,18 +9,16 @@
 	<body> 
 	<h1>Login Form</h1>
 	
-	<form th:if="@{/login}" th:object="${loginForm}" method="post">
+	<form action="/inicioAdmin" th:if="@{/login}" th:object="${loginForm}" method="post">
 	    <label for="user">Matricula</label>
 	    <input type="text" id="username" name="username">
 	    
 	    <label for="password">Senha</label>
 	    <input type="password" id="password" name="password">
-	   
-	    
-	    <br/>
-	    <input type="submit" value="Entrar"/>
-	    
-	    </form>
+	    <br>
+	    <button type="submit">Entrar</button>
+	    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+	 </form>
 	
 	
 	</body>
