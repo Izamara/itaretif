@@ -31,10 +31,10 @@ public class SiteController {
 		return "mapeamento";
 	}
 	
-	@RequestMapping("/sobre")
-	public String sobre() {
-		return "sobre";
-	}
+//	@RequestMapping("/sobre")
+//	public String sobre() {
+//		return "sobre";
+//	}
 	
 	@RequestMapping("/planta1")
 	public String palnta1() {
