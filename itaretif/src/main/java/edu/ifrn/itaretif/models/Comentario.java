@@ -16,8 +16,28 @@ public class Comentario  implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
-	private long codigo_c;
+	private Long codigo;
 	
 	@NotEmpty	
-	private String comentario;
+	private String conteudo;
+
+	public Long getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getConteudo() {
+		return conteudo;
+	}
+
+	public void setConteudo(String conteudo) {
+		this.conteudo = conteudo;
+	}
+
+	
+	
+	
 }

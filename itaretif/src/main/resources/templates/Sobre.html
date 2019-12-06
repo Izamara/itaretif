@@ -92,6 +92,21 @@
 				<button action="/sobre" style="margin-left: 93%;" type="submit" class="btn btn-outline-success">Opinar</button>
 				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 			</form>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Comentários/Sugestões:</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr th:each="comentario : ${comentarios}">
+					<td><span th:text="${comentario.conteudo}"></span></td>
+					</tr>
+				</tbody>
+			</table>
+			
 		</div>
 		</div>
 	</div>
