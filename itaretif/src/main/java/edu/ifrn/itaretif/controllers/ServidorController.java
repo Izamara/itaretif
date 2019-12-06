@@ -11,7 +11,7 @@ import edu.ifrn.itaretif.models.Noticias;
 import edu.ifrn.itaretif.repositories.NoticiasRepository;
 
 @Controller
-public class NoticiasController {
+public class ServidorController {
 	
 	@Autowired
 	private NoticiasRepository er;
