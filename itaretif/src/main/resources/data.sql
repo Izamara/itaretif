@@ -4,16 +4,16 @@ INSERT INTO `itaretif`.`role`
 	(`id`,`nome_role`)
 VALUES
 	(1, 'ROLE_ADMIN'),
-    (1, 'ROLE_SERVIDOR');
+    (2, 'ROLE_SERVIDOR');
     
     
 INSERT INTO `itaretif`.`usuario`
 	(`id`, `matricula`, `senha`)
 VALUES
 	(1, '001', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG'),
-    (1, '002', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG'),
-    (1, '003', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG'),
-    (1, '004', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG');
+    (2, '002', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG'),
+    (3, '003', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG'),
+    (4, '004', '$2a$10$QFfgj1ZikuWqzACSSXFt/uBuQGb4oWwwyppmcwHhMdCCU8HGsTvYG');
 
     
 INSERT INTO `itaretif`.`usuario_roles`
