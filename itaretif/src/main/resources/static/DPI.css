@@ -13,7 +13,8 @@ button.btn.btn-link { color: green;
 table { float: left;
         width: 100px;
         height: 100px;
-        margin: 1.8em; 
+        margin: 1.8em;
+        margin-right: 80px; 
         border-collapse: collapse;
 }
 
@@ -42,7 +43,7 @@ th, td { padding: 15px;
 }
 
 
-.container { text-align: center;
+.container { display: inline-block;
              margin: 40px;
 
 }
@@ -109,7 +110,8 @@ body { font-family: cursive!important;
 }
 
 
-.container_ { margin-left: 80px;
+.container_ { display: inline-block;
+			  margin-left: 80px;
               margin-right: 80px;
               margin-bottom: 80px;
               margin-top: 80px;
@@ -147,7 +149,7 @@ body { font-family: cursive!important;
 
 .container_03 { display: inline-block;
                 width: 120%;
-                margin-left: 20px;
+                margin-left: 200px;
                 margin-top: 0px;
                 margin-bottom: 100px;
 
@@ -209,7 +211,7 @@ figcaption { color: green;
 
 
 #container { display: inline-block;
-             margin: 0px;
+             margin-left: 180px;
              width: 1200px;
              height: 500px;
 
@@ -386,7 +388,7 @@ hr { margin-bottom: 30px;
 h2 { text-align: center;
      margin: 15px;
      margin-top: 45px;
-     text-shadow: 2px 2px 2px #888888
+     text-shadow:
 }
 
 
@@ -574,7 +576,7 @@ p { text-align: justify;
 
 
 .img2 { width: 430px;
-        height: 340px;
+        height: 300px;
         float: left;
         display: block;
         margin-top: 20px;
