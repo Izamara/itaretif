@@ -8,9 +8,8 @@ import edu.ifrn.itaretif.models.Role;
 @Repository
 public interface RoleRepository extends CrudRepository<Role, Long> {
 	
-	Role findByNome(String nome);
+	//Role findByNomeRole(String nome);
 	
-	Iterable<Role> findAllByOrderByNomeAsc();
-
+	//Iterable<Role> findAllByOrderByNomeAsc();
 
 }

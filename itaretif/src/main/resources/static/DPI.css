@@ -110,6 +110,21 @@ body { font-family: cursive!important;
 }
 
 
+.cont { display: inline-block;
+		margin-left: 700px;
+        margin-right: 0px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        padding-left: 100px;
+        padding-right: 90px;
+        padding-bottom: 30px;
+        padding-top: 80px;
+        border: solid 1px grey;
+        border-radius: 7px 7px 7px;
+        box-shadow: -5px 5px 20px #b3b3b3;
+}
+
+
 .container_ { display: inline-block;
 			  margin-left: 80px;
               margin-right: 80px;
@@ -123,6 +138,7 @@ body { font-family: cursive!important;
               border-radius: 7px 7px 7px;
               box-shadow: -5px 5px 20px #b3b3b3;
 }
+
 
 
 .container_0 { display: inline-block;

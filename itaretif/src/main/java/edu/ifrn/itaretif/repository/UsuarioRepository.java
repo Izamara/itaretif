@@ -8,5 +8,5 @@ public interface UsuarioRepository extends CrudRepository<Usuario, String>{
 	
 	Usuario findByMatricula(String matricula); 
 
-
+	//Iterable<Usuario> findAllByMatriculaContaining(String matricula);
 }

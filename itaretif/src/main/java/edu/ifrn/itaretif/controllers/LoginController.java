@@ -11,18 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 	@GetMapping("/login")
 	public String login() {
 		return "login";
-	
-	   
-		
-		
-		
-
-		
-		
 		
 	}
 	
-	
-	
-
 }
