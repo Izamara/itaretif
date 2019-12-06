@@ -23,13 +23,13 @@ public class ImplementsUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
 		// TODO Auto-generated method stub
 
-		Usuario usuario = ur.findByLogin(login);
+		Usuario usuario = ur.findByMatricula(login);
 		if (usuario == null) {
 
-			throw new UsernameNotFoundException("Este suario não está cadastrado");
+			throw new UsernameNotFoundException("Este usuário não está cadastrado! Cadastre-se caso queira acessar a página.");
 
 		}
-		return new User(usuario.getUsername(), usuario.getPassword(), true, true, true, true, usuario.getAuthorities());
+		return usuario;
 
 	}
 

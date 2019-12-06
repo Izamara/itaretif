@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -18,31 +20,22 @@ public class Usuario implements UserDetails {
 	private static final long serialVersionUID = -3396605080876187396L;
 
 	@Id
-	private String login;
+	private Long id;
 
-	private String nome;
+	private String matricula;
 
 	private String senha;
 
 	@ManyToMany
-	@JoinTable(name = "usuarios_roles", joinColumns = @JoinColumn(name = "usuario_id", referencedColumnName = "login"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "nomeRole"))
-
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<Role> roles;
 
-	public String getLogin() {
-		return login;
+	public String getMatricula() {
+		return matricula;
 	}
 
-	public void setLogin(String login) {
-		this.login = login;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 
 	public String getSenha() {
@@ -51,7 +44,6 @@ public class Usuario implements UserDetails {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-
 	}
 
 	public List<Role> getRoles() {
@@ -77,7 +69,7 @@ public class Usuario implements UserDetails {
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return this.login;
+		return this.matricula;
 	}
 
 	@Override
@@ -102,6 +94,14 @@ public class Usuario implements UserDetails {
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
 		return true;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 }
