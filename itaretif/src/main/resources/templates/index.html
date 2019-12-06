@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html>
-<tittle>Hello World</tittle>
-<head></head>
+<html xmlns:th="http://thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Notícias</title>
+	<meta charset="UTF-8">
+</head>
 <body>
-<h1>Hello World!</h1>
+	<h1>Lista de Notícias</h1>
+	<h3><a href="/cadastrarNoticia">Cadastar Notícia</a></h3>
+	
+	<div th:each="noticia : ${noticia}">
+		<div class="row">
+			<p><span th:text="${noticia.titulo}"></span></p>
+			<p><span th:text="${noticia.conteudo}"></span></p>
+<!-- 			<p><span th:text="${noticia.autor}"></span></p> -->
+		</div>	
+		
+	
+	</div>
+
 </body>
+
 
 </html>
