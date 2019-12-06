@@ -1,27 +1,57 @@
-<!DOCTYPE html> 
-
-<html>
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-	<meta charset="ISO-8859-1">
+	<meta charset="utf-8">
 	<title>Login</title>
-
+	<link rel="shortcut icon" href="img/icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="DPI.css">
+	
 	</head>
-	<body> 
-	<h1>Login Form</h1>
-	
-	<form th:if="@{/login}" th:object="${loginForm}" method="post">
-	    <label for="user">Matricula</label>
-	    <input type="text" id="username" name="username">
-	    
-	    <label for="password">Senha</label>
-	    <input type="password" id="password" name="password">
-	   
-	    
-	    <br/>
-	    <input type="submit" value="Entrar"/>
-	    
-	    </form>
 	
 	
-	</body>
-	</html>
+	<h1>Login Usuário</h1>
+	
+	
+	  <form>
+		  <div class="form-group">
+		    <label for="Matricula">Matricula</label>
+		    <input type="text" class="form-control" id="username" aria-describedby="username">
+		    <small id="matricula" class="form-text text-muted">Digite sua matrícula</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="Password">Digite sua senha</label>
+		    <input type="password" class="form-control" id="password">
+		  </div>
+
+		  <button type="button" class="btn btn-success">Entrar</button>
+
+ 
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
