@@ -32,7 +32,7 @@ public class NoticiasController {
 	
 	@RequestMapping("/noticias")
 	public ModelAndView listaNoticias() {
-		ModelAndView mv = new ModelAndView("index");
+		ModelAndView mv = new ModelAndView("PaginaDeNoticias");
 		Iterable<Noticias> noticias = er.findAll();
 		mv.addObject("noticia", noticias);
 		return mv;
