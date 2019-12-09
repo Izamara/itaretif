@@ -37,11 +37,11 @@ public class SiteController {
 		return "mapeamento";
 	}
 	
-//	Foi para o comentario controller
-//	@RequestMapping(value="/sobre", method=RequestMethod.GET)
+
+
+//	@RequestMapping("/sobre")
 //	public String sobre() {
 //		return "sobre";
-//		
 //	}
 	
 	@RequestMapping("/planta1")

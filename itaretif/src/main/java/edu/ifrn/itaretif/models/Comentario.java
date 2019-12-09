@@ -38,6 +38,6 @@ public class Comentario  implements Serializable{
 	}
 
 	
-	
-	
+
 }
+

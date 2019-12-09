@@ -111,17 +111,32 @@ body { font-family: cursive!important;
 
 
 .cont { display: inline-block;
-		margin-left: 700px;
+		margin-left: 80px;
         margin-right: 0px;
         margin-bottom: 80px;
         margin-top: 80px;
         padding-left: 100px;
         padding-right: 90px;
         padding-bottom: 30px;
-        padding-top: 80px;
+        padding-top: 60px;
         border: solid 1px grey;
         border-radius: 7px 7px 7px;
         box-shadow: -5px 5px 20px #b3b3b3;
+}
+
+.cont_ { display: inline-block;
+		 float: left;
+		 text-align: justify;
+		 margin-left: 0px;
+         margin-right: 50px;
+         margin-bottom: 50px;
+         margin-top: 80px;
+         padding-left: 70px;
+         padding-right: 90px;
+         padding-bottom: 30px;
+         padding-top: 60px;
+         border: solid 0.5px grey;
+         border-radius: 7px 7px 7px;
 }
 
 
