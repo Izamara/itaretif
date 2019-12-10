@@ -115,7 +115,7 @@ body { font-family: cursive!important;
         padding-top: 60px;
         border: solid 1px grey;
         border-radius: 7px 7px 7px;
-        box-shadow: -5px 5px 20px #b3b3b3;
+        box-shadow: -2px 2px 14px #b3b3b3;
 }
 
 .cont_ { display: inline-block;
@@ -151,7 +151,7 @@ body { font-family: cursive!important;
 
 
 .container_0 { display: inline-block;
-               margin-left: 20px;
+               margin-left: 200px;
                margin-top: 40px;
 }
 
