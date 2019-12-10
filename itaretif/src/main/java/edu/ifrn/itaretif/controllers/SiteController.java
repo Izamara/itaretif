@@ -2,9 +2,15 @@ package edu.ifrn.itaretif.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import edu.ifrn.itaretif.models.Comentario;
+import edu.ifrn.itaretif.repositories.ComentarioRepository;
 
 @Controller
 public class SiteController {
+	
+	private ComentarioRepository cr;
 	
 	@RequestMapping("/")
 	public String index() {
@@ -31,6 +37,8 @@ public class SiteController {
 		return "mapeamento";
 	}
 	
+
+
 //	@RequestMapping("/sobre")
 //	public String sobre() {
 //		return "sobre";
