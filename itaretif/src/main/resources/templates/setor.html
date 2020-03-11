@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Setores</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Lista de Setores</h1>
+	<h3><a href="/cadastrarSetor">Cadastrar Setor</a></h3>
+	
+	<div th:each="setor : ${setor}">
+		<div class="row">
+			<p><span th:text="${setor.nome}"></span></p>
+			<p><span th:text="${Nome.}"></span></p>
+<!-- 			<p><span th:text="${Descricao.}"></span></p> -->
+		</div>	
+		
+	
+	</div>
+
+</body>
+
+
+</html>
+
