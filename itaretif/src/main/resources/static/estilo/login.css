@@ -1,0 +1,30 @@
+
+.titulo { color: white;
+		  background-color: #008000;
+		  padding-top: 50px;
+		  padding-bottom: 50px;
+		  font-family: fantasy!important;
+		  text-align: center!important;
+}
+
+.cont { width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+	
+}
+
+.box { border: solid lightgray 1px;
+	   border-radius: 7px 7px 7px;
+	   width: 300px;
+	   height: 300px;
+	   padding: 20px;
+	   margin-top: -200px;
+}
+
+.dimensoes { width: 100%;
+			 margin-top:15px;  
+	
+}
