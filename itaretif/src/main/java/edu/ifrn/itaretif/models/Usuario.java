@@ -30,6 +30,15 @@ public class Usuario implements UserDetails {
 	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<Role> roles;
 
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getMatricula() {
 		return matricula;
 	}
@@ -57,7 +66,7 @@ public class Usuario implements UserDetails {
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.roles;
 	}
 
 	@Override
@@ -96,12 +105,11 @@ public class Usuario implements UserDetails {
 		return true;
 	}
 
-	public Long getId() {
-		return id;
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", matricula=" + matricula + ", senha=" + senha + ", roles=" + roles + "]";
 	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
+	
 
 }
