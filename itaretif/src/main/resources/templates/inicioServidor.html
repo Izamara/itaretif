@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>ItaretIF</title>
+	<link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="estilo/portal.css">
+    <link rel="stylesheet" type="text/css" href="estilo/containers.css">
+	<link rel="stylesheet" type="text/css" href="estilo/menus.css">
+	<link rel="stylesheet" type="text/css" href="estilo/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: -2px 2px 10px #b3b3b3;"> -->
+	<!-- <a class="navbar-brand" href="#"> -->
+    	<!-- <img src="img/icon.png" width="30" height="30" alt=""> -->
+  	 <!-- </a> -->
+	 <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+	   <!-- <span class="navbar-toggler-icon"></span> -->
+	  <!-- </button> -->
+    <!-- </nav> -->
+
+    	<div class="titulo">	
+			<h1> Bem vindo, Administrador!</h1>
+			<p style="text-align: center;">Esta é sua área! Aqui você pode cadastrar novos administradores, servidores, setores, excluir os mesmos e editar os textos do portal.</p>
+		</div>
+		
+		<h1 style="color: green; font-family: fantasy; text-align: center; margin-bottom: 0px; margin-top: 20px;">Espaço para cadastros</h1>
+		
+	<div class="contem">
+	
+		<div class="cont_">
+		
+			<form>
+				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Administrador(a):</h1>
+				
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Matrícula</label>
+				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma matrícula de 3 dígitos">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Senha</label>
+				    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma senha de 3 dígitos">
+				  </div>
+				  <button action="/cadastroAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>
+			</form>
+			
+		</div>
+		
+		<div class="cont_1">
+			<form>
+				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Servidodor(a):</h1>
+				
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Nome</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Descrição</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fale sobre o servidor">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Setor de trabalho</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">Horário de trabalho</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <button action="/inicioAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>
+			 </form>
+		 </div>
+		 
+		 <div class="cont_2">
+			<form>
+				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ ###</h1>
+				
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">###</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">###</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">###</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleFormControlInput1">###</label>
+				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+				  </div>
+				  <button action="/inicioAdmin" type="button" class="btn btn-outline-success dimensoes">###</button>
+			 </form>
+		 </div>
+		
+	</div>
+	
+</body>
+
+</html>
