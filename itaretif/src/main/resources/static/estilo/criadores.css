@@ -1,0 +1,18 @@
+.criador { height: auto;
+           width: 130px;
+           height: 130px;
+           margin: 0px;
+           border: solid green 2px;
+           border-radius: 7px;
+
+}
+
+.criador:hover{ width: 150px;
+                height: 150px; 
+                box-shadow: -4px 5px 8px #b3b3b3;
+                margin-left: 0px;
+}
+
+.criadores { text-align: justify;
+
+}
