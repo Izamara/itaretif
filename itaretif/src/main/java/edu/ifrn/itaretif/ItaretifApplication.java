@@ -12,5 +12,5 @@ public class ItaretifApplication {
 		
 		System.out.print(new BCryptPasswordEncoder().encode("123"));
 	}
-
+		
 }
