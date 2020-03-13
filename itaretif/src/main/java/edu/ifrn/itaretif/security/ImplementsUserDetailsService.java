@@ -20,14 +20,13 @@ public class ImplementsUserDetailsService implements UserDetailsService {
 	private UsuarioRepository ur;
 
 	@Override
-	public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
-
-		Usuario usuario = ur.findByMatricula(login);
+	public UserDetails loadUserByUsername(String matricula) throws UsernameNotFoundException { 
+		Usuario usuario = ur.findByMatricula(matricula);
+		
+		System.out.println(usuario);
+		
 		if (usuario == null) {
-
-			throw new UsernameNotFoundException("Este usuário não está cadastrado! Cadastre-se caso queira acessar a página.");
-
+			 throw new UsernameNotFoundException("Este usuário não foi encontrado!");
 		}
 		return usuario;
 

@@ -15,9 +15,7 @@ public class SecurityConfiguration {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception {
 	    
-		builder
-	    	.userDetailsService(detailsService)
-	    	.passwordEncoder(new BCryptPasswordEncoder());
+		builder.userDetailsService(detailsService)	.passwordEncoder(new BCryptPasswordEncoder());
 	    	
 //		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 //		builder
