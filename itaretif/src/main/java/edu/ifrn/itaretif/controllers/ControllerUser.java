@@ -21,7 +21,7 @@ public class ControllerUser {
 		@Autowired
 		private RoleRepository rr;
 	
-		@GetMapping("/cadastroAdmin")
+		@GetMapping("/admin/inicio")
 		public String formCadastro() {
 			return "inicioAdmin";
 		}
@@ -35,12 +35,17 @@ public class ControllerUser {
 
 		usuario.setRoles(roles);
 
-		/* Criptografando senha */
+		/*Criptografando senha*/
 	    usuario.setSenha(new BCryptPasswordEncoder().encode(usuario.getSenha()));
 
 		ur.save(usuario);
 
 		return "redirect:/inicioAdmin";
 	}
-
+		
+		
+		@GetMapping("/serv/inicio")
+		public String servidor(){
+		return "inicioServidor";
+		}
 }
