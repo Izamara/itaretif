@@ -18,9 +18,8 @@ public class SetorController {
 	public String form(){
         return "setor/formSetor"; 
 
-
- 
     } 
+	
 	
 	@RequestMapping(value="/cadastrarSetor", method=RequestMethod.POST)
 	public String form(Setor setor){
@@ -29,17 +28,17 @@ public class SetorController {
 
 		return "redirect:/cadastrarSetor";
 
-
 	
    }
-	    @RequestMapping("/setores")
+	
+	    @RequestMapping(value="/setores", method= RequestMethod.GET)
 		public ModelAndView listaSetores(){
 	    	ModelAndView mv = new ModelAndView("setor");
 	    	Iterable<Setor> setores = sr.findAll();
-	    	mv.addObject("setores", setores);
+	    	mv.addObject("setor", setores);
 	    	return mv;
 	    	
-	
     } 	
+	    
 		
 }

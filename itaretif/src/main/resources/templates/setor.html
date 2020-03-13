@@ -10,15 +10,15 @@
 	<h1>Lista de Setores</h1>
 	<h3><a href="/cadastrarSetor">Cadastrar Setor</a></h3>
 	
-	<div th:each="setor : ${setor}">
+<div class="container">
+	<div th:each="setor : ${setores}">
 		<div class="row">
-			<p><span th:text="${setor.nome}"></span></p>
-			<p><span th:text="${Nome.}"></span></p>
+			Nome:<p><span th:text="${setor.nome}"></span></p>
+			Descrição:<p><span th:text="${setor.descricao}"></span></p>
 <!-- 			<p><span th:text="${Descricao.}"></span></p> -->
 		</div>	
-		
-	
 	</div>
+</div>
 
 </body>
 
