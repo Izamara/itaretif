@@ -26,7 +26,7 @@ public class ControllerUser {
 			return "inicioAdmin";
 		}
 	
-		@PostMapping("/cadastroAdmin")
+		@PostMapping("/admin/inicio")
 		public String salvar(Usuario usuario) {
 		
 		ArrayList<Role> roles = new ArrayList<Role>();
