@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,12 +27,14 @@
     <!-- </nav> -->
 
     	<div class="titulo">	
-			<h1> Bem vindo, Administrador!</h1>
-			<p style="text-align: center;">Esta é sua área! Aqui você pode cadastrar novos administradores, servidores, setores, excluir os mesmos e editar os textos do portal.</p>
+			<h1> Bem vindo, Servidordor!</h1>
+			<p style="text-align: center;">Esta é sua área! Aqui você pode cadastrar seus projetos.</p>
+			<form action="/logout" method="post" class="form-inline my-2 my-lg-0">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button>
+				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+			</form>
 		</div>
-		
-		<h1 style="color: green; font-family: fantasy; text-align: center; margin-bottom: 0px; margin-top: 20px;">Espaço para cadastros</h1>
-		
+				
 	<div class="contem">
 	
 		<div class="cont_">
@@ -40,11 +43,11 @@
 				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Administrador(a):</h1>
 				
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Matrícula</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma matrícula de 3 dígitos">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Senha</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma senha de 3 dígitos">
 				  </div>
 				  <button action="/cadastroAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>
@@ -54,22 +57,22 @@
 		
 		<div class="cont_1">
 			<form>
-				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Servidodor(a):</h1>
+				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">###</h1>
 				
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Nome</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Descrição</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fale sobre o servidor">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Setor de trabalho</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
 				  </div>
 				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Horário de trabalho</label>
+				    <label for="exampleFormControlInput1">###</label>
 				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
 				  </div>
 				  <button action="/inicioAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>

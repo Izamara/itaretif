@@ -68,19 +68,25 @@
          border: solid 0.5px grey;
          border-radius: 7px 7px 7px;">
 		
-			<form>
+			<form action="/admin/cadastrar" method="get">
 				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Administrador(a):</h1>
-				
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Matrícula</label>
-				    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma matrícula de 3 dígitos">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Senha</label>
-				    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Digite uma senha de 3 dígitos">
-				  </div>
-				  <button action="/cadastroAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>
+				<div class="form-group">
+					<label for="inputAddress">Nome</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputEmail4">Matrícula</label>
+						<input type="text" class="form-control" id="inputEmail4">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="inputPassword4">Senha</label>
+						<input type="password" class="form-control" id="inputPassword4">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-outline-success" style="width: 100%!important;">Cadastrar</button>
 			</form>
+			
 			
 		</div>
 		
@@ -94,27 +100,28 @@
          padding: 30px;
          border: solid 0.5px grey;
          border-radius: 7px 7px 7px;">
-			<form>
-				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Servidodor(a):</h1>
-				
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Nome</label>
-				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome completo">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Descrição</label>
-				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fale sobre o servidor">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Setor de trabalho</label>
-				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleFormControlInput1">Horário de trabalho</label>
-				    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-				  </div>
-				  <button action="/inicioAdmin" type="button" class="btn btn-outline-success dimensoes">Cadastrar</button>
-			 </form>
+			<form action="/serv/cadastrar" method="get">
+				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Servidor(a):</h1>
+				<div class="form-group">
+					<label for="inputAddress">Nome</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputEmail4">Setor de trabalho</label>
+						<input type="text" class="form-control" id="inputEmail4">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="inputPassword4">Horário de trabalho</label>
+						<input type="text" class="form-control" id="inputPassword4">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">Descrição</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="Fale um pouco sobre o servidor">
+				</div>
+				<button type="submit" class="btn btn-outline-success" style="width: 100%;!important">Cadastrar</button>
+			</form>
 		 </div>
 		 
 		 <div class="cont_2" style="display: inline-block;
