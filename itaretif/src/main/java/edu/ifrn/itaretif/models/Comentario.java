@@ -18,6 +18,10 @@ public class Comentario  implements Serializable{
 	@GeneratedValue(strategy= GenerationType.AUTO)
 	private Long codigo;
 	
+	private String nome;
+	
+	
+
 	@NotEmpty	
 	private String conteudo;
 
@@ -28,7 +32,14 @@ public class Comentario  implements Serializable{
 	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
 	}
+	
+	public String getNome() {
+		return nome;
+	}
 
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	public String getConteudo() {
 		return conteudo;
 	}
