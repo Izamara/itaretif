@@ -7,6 +7,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.ifrn.itaretif.models.Role;
 import edu.ifrn.itaretif.models.Usuario;
@@ -22,12 +23,18 @@ public class ControllerUser {
 		private RoleRepository rr;
 	
 		@GetMapping("/admin/inicio")
-		public String formCadastro() {
+		public String inicio() {
 			return "inicioAdmin";
 		}
+		
+		@GetMapping("/admin/cadastro")
+		public String formCadastro(){
+		return "formCadastroAdmin";
+		}
+		
 	
-		@PostMapping("/admin/inicio")
-		public String salvar(Usuario usuario) {
+		@PostMapping("/admin/cadastro")
+		public String salvarCadastro(Usuario usuario) {
 		
 		ArrayList<Role> roles = new ArrayList<Role>();
 		Role role = rr.findByNomeRole("ROLE_ADMIN"); 
@@ -40,7 +47,7 @@ public class ControllerUser {
 
 		ur.save(usuario);
 
-		return "redirect:/inicioAdmin";
+		return "redirect:/admin/cadastro";
 	}
 		
 		
