@@ -94,12 +94,12 @@
 		<br>
 		<p>Para que o nosso site tenha sua cara, precisamos da sua ajuda! Para isso, basta apenas nos dar o seu feedback sobre o portal e/ou trazer sugestões sobre o que achar necessário.</p>
 		<div class="form-group">
-			<form class="container" method="post">
+			<form action="/sobre" class="container" method="post">
 				<textarea type="text" value="" name="nome" class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Informe seu nome."></textarea>
 				<br>
 				<textarea type="text" value="" name="conteudo" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deixa um comentário ou uma sugestão pra gente ;)"></textarea> 
 				<br>
-				<button action="/sobre" style="margin-left: 93%;" type="submit" class="btn btn-outline-success">Opinar</button>
+				<button style="margin-left: 93%;" type="submit" class="btn btn-outline-success">Opinar</button>
 				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 			</form>
 			
