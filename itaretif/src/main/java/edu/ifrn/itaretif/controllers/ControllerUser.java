@@ -7,6 +7,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.ifrn.itaretif.models.Role;
@@ -27,13 +28,13 @@ public class ControllerUser {
 			return "inicioAdmin";
 		}
 		
-		@GetMapping("/admin/cadastro")
+		@RequestMapping(value="/admin/cadastro", method=RequestMethod.GET)
 		public String formCadastro(){
 		return "formCadastroAdmin";
 		}
 		
 	
-		@PostMapping("/admin/cadastro")
+		@RequestMapping(value="/admin/cadastro", method=RequestMethod.POST)
 		public String salvarCadastro(Usuario usuario) {
 		
 		ArrayList<Role> roles = new ArrayList<Role>();
@@ -55,4 +56,6 @@ public class ControllerUser {
 		public String servidor(){
 		return "inicioServidor";
 		}
+		
+		
 }
