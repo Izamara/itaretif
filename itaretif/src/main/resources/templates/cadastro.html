@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>ItaretIF</title>
+	<link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="estilo/portal.css">
+    <link rel="stylesheet" type="text/css" href="estilo/containers.css">
+	<link rel="stylesheet" type="text/css" href="estilo/menus.css">
+	<link rel="stylesheet" type="text/css" href="estilo/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: -2px 2px 10px #b3b3b3;"> -->
+	<!-- <a class="navbar-brand" href="#"> -->
+    	<!-- <img src="img/icon.png" width="30" height="30" alt=""> -->
+  	 <!-- </a> -->
+	 <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+	   <!-- <span class="navbar-toggler-icon"></span> -->
+	  <!-- </button> -->
+    <!-- </nav> -->
+
+    		<div style="color: white;
+		  background-color: #008000;
+		  padding-top: 50px;
+		  padding-bottom: 50px;
+		  font-family: fantasy!important;
+		  text-align: center!important;">
+				<h1> Página de cadastro</h1>
+			</div>
+		
+	<div class="contem" style="display: inline-block;
+		  width: ;
+		  margin-left: 80px;
+          margin-right: 80px;
+          margin-bottom: 80px;
+          margin-top: 40px;
+          padding-left: 90px;
+          padding-right: 90px;
+          padding-bottom: 30px;
+          padding-top: 80px;
+          border:;
+          border-radius: 7px 7px 7px;
+          box-shadow:;">
+	
+		<div class="cont_" style="display: inline-block;
+		 float: left;
+		 text-align: justify;
+		 margin-left: 0px;
+         margin-right: 10px;
+         margin-bottom: 20px;
+         margin-top: -60px;
+         padding: 30px;
+         border: solid 0.5px grey;
+         border-radius: 7px 7px 7px;">
+		
+			<form action="/cadastrar" method="post">
+				Primeiro nome: <input type="text" value="" name="nome"/>
+				Digite uma matricula de seis dígitos: <input type="text" value="" name="matricula"/>
+				Sua senha:<input type="password" value="" name="senha"/>
+		
+	  			<button type="submit">Salvar</button>
+				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+			</form>
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>
