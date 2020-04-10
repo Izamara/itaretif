@@ -91,8 +91,11 @@ th, td { padding: 15px;
 
 
 .icon_1 { margin: 0px;
-          height: 15px;
-          width: 22px;
+		  padding: 10px;
+          height: 60px;
+          width: 60px;
+          border: solid 1px #009933;
+          border-radius: 7px 7px 7px;
 }
 
 
@@ -272,12 +275,12 @@ footer{ text-align: justify-all;
 }
 
 
-a { text-decoration: none;
+/*a { text-decoration: none;
 
-}
+}*/
 
 
-a.background:hover { background-color: #009933;
+a.background:hover { color: #009933;
 
 }
 

@@ -91,9 +91,8 @@
 
 
 #container { display: inline-block;
-             margin-left: 180px;
-             width: 1200px;
-             height: 500px;
+             margin-left: 0px;
+             margin-right: 0px;
 }
 
 
