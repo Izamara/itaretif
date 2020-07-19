@@ -14,6 +14,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -66,25 +69,48 @@
          border: solid 0.5px grey;
          border-radius: 7px 7px 7px;">
 		
-			<form action="/admin/inicio" method="post">
+			<form class="col s12" action="/admin/inicio" method="post">
 				<h1 style="font-size: 22px; margin-bottom: 30px; color: green; font-family: fantasy!important;">Nov@ Administrador(a):</h1>
-				<div class="form-group">
-					<label for="inputName">Nome</label>
-					<input type="text" name="nome" class="form-control" id="inputName" placeholder="">
-				</div>
-				<div class="form-row">
-					<div class="form-group col-md-6">
-						<label for="inputName">Matrícula</label>
-						<input type="text" name="matricula" class="form-control" id="inputName">
-					</div>
-					<div class="form-group col-md-6">
-						<label for="inputPassword4">Senha</label>
-						<input type="password" name="senha" class="form-control" id="inputPassword4">
-					</div>
-				</div>
-				<button type="submit" class="btn btn-outline-success" style="width: 100%!important;">Cadastrar</button>
-			</form>
-			
+			      <div class="row">
+			        <div class="input-field col s6">
+			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+			          <label for="first_name">Primeiro Nome</label>
+			        </div>
+			        <div class="input-field col s6">
+			          <input id="last_name" type="text" class="validate">
+			          <label for="last_name">Último Nome</label>
+			        </div>
+			      </div>
+			    
+			      <div class="row">
+			        <div class="input-field col s12">
+			          <input id="password" type="password" class="validate">
+			          <label for="password">Senha</label>
+			        </div>
+			      </div>
+			      
+			      <div class="row">
+			        <div class="input-field col s12">
+			          <input id="email" type="email" class="validate">
+			          <label for="email">Email</label>
+			        </div>
+			      </div>
+			      
+			      <div class="row">
+			        <div class="col s12">
+			          This is an inline input field:
+			          <div class="input-field inline">
+			            <input id="email_inline" type="email" class="validate">
+			            <label for="email_inline">Email</label>
+			            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+			          </div>
+			        </div>
+			      </div>
+			      
+			      <button type="submit" class="btn btn-outline-success" style="width: 100%!important;">Cadastrar</button>
+		    </form>
+	</div>
+				
 			
 		</div>
 		
