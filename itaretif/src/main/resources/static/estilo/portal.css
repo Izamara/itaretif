@@ -4,21 +4,24 @@
 }
 
 
-body { font-family: cursive!important;
+.obs{ color: #25A25A;
+      margin-top: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px; 
+
  
 }
 
 
-button.btn.btn-link { color: green;
-
+body { font-family: cursive!important;
+ 
 }
 
 
 table { float: left;
         width: 100px;
         height: 100px;
-        margin: 1.8em;
-        margin-right: 80px; 
+        margin: 2em;
         border-collapse: collapse;
 }
 
@@ -30,11 +33,11 @@ th, td { padding: 15px;
 
 .th { color: white;
       border-radius: 7px 0px 0px 0px;
-      background-color: green; 
+      background-color: #25A25A; 
 }
 
 
-.td { border-top: solid green 1px;
+.td { border-top: solid #25A25A 1px;
       border-right: solid black 1px;
       border-bottom: solid black 1px;
       border-left: solid black 1px;
@@ -57,44 +60,12 @@ th, td { padding: 15px;
 }
 
 
-#coluna1 { border: solid green 1.5px;
-           display: inline-block;
-           float: left;
-           margin: 1em;
-           padding: 20px;
-           width: 360px;
-           height: 400px; 
-           border-radius: 7px;
-}
-
-
-#coluna2 { border: solid green 1.5px;
-           display: inline-block;
-           float: left;
-           margin: 1em;
-           padding: 20px;
-           width: 360px;
-           height: 400px;
-           border-radius: 7px;
-}
-
-
-#coluna3 { border: solid green 1.5px;
-           display: inline-block;
-           float: left;
-           margin: 1em;
-           padding: 20px;
-           width: 360px;
-           height: 400px;
-           border-radius: 7px;
-}
-
 
 .icon_1 { margin: 0px;
 		  padding: 10px;
-          height: 60px;
-          width: 60px;
-          border: solid 1px #009933;
+          height: 50px;
+          width: 50px;
+          border: solid 1.5px #25A25A;
           border-radius: 7px 7px 7px;
 }
 
@@ -106,7 +77,7 @@ th, td { padding: 15px;
 
 .barra { height: 1px;
          border: 0;
-         background-image: linear-gradient(90deg, transparent, green, transparent)
+         background-image: linear-gradient(90deg, transparent, #25A25A, transparent)
 }
 
 
@@ -154,12 +125,12 @@ figure { float: left;
 }
 
 
-figcaption { color: green;
+figcaption { color: #25A25A;
              margin-top: 20px;
 }
 
 
-.figcaption_0_1 { color: green;
+.figcaption_0_1 { color: #25A25A;
                   margin-top: 0px;
                   margin-bottom: 20px;
 }
@@ -179,7 +150,7 @@ figcaption { color: green;
 
 
 .estilofonte::after { content: "IF";
-                      color: green; 
+                      color: #25A25A; 
 }
 
 
@@ -229,9 +200,14 @@ h2 { text-align: center;
 h3 { margin-left: -30px;
      margin-top: 20px;
      display: inline-block;
-     color: green;
+     color: #25A25A;
      text-shadow: 2px 2px 2px #888888;
      border-left: groove;
+}
+
+h4 { color: black;
+	 margin-bottom: 1em;
+	
 }
 
 
@@ -244,7 +220,7 @@ h6 { font-family: fantasy;
         width: 130px;
         height: 130px;
         margin: 0px;
-        border: solid green 1px;
+        border: solid #25A25A 1px;
         border-radius: 7px;
 
 }
@@ -254,7 +230,7 @@ h6 { font-family: fantasy;
          width: 130px;
          height: 130px;
          margin: 0px;
-         border: solid green 1px;
+         border: solid #25A25A 1px;
          border-radius: 7px;
 
 }
@@ -268,21 +244,22 @@ h6 { font-family: fantasy;
 
 
 footer{ text-align: justify-all;
-        margin: 50px;
+        margin: 50px 50px 0px 50px;
         font-weight: bold;
-        color: green;
+        color: #25A25A;
 
 }
 
 
-/*a { text-decoration: none;
+a { text-decoration: none;
+	text-justify: center;
+
+}
+
+
+/*a.background:hover { background-color: #009933;
 
 }*/
-
-
-a.background:hover { color: #009933;
-
-}
 
 
 a:visited { text-decoration: none;
@@ -304,7 +281,7 @@ p { text-align: justify;
 
 
 .color{ font-family: fantasy;
-        color: green;
+        color: #25A25A;
         margin-top: 0px;
         padding-top: 0px;
         padding-bottom: 20px; 
@@ -318,14 +295,14 @@ p { text-align: justify;
 }
 
 
-.link:hover { color: green;
-              border: solid green 1px;
+.link:hover { color: #25A25A;
+              border: solid #25A25A 1px;
               padding-left: 7px;
               padding-right: 7px;
               padding-bottom: 3px;
               padding-top: 3px;
               border-radius: 15px;
-              background-color: green;
+              background-color: #25A25A;
               color: white;
               box-shadow: 4px 4px 4px #888888
 }
