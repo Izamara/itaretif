@@ -7,9 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
@@ -22,13 +21,16 @@ public class Usuario implements UserDetails {
 	private static final long serialVersionUID = -3396605080876187396L;
 
 	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
 	
+	@NotEmpty
 	private String nome;
-
+	
+	@NotEmpty
 	private String matricula;
-
+	
+	@NotEmpty
 	private String senha;
 
 	@ManyToMany

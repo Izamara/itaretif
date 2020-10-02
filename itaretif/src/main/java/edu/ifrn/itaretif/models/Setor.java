@@ -14,7 +14,7 @@ public class Setor implements Serializable {
 	
    private static final long SerialVersionUID = 1; 	
    @Id
-   @GeneratedValue(strategy= GenerationType.AUTO)
+   @GeneratedValue(strategy= GenerationType.IDENTITY)
    private Long codigo;
 	
    @NotEmpty
