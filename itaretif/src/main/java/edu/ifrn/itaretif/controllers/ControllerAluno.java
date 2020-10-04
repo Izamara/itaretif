@@ -55,15 +55,6 @@ public class ControllerAluno {
 		ur.save(usuario);
 		attributes.addAttribute("mensagem", "Cadastro feito com sucesso!");
 		return "redirect:/cadastroAluno";
-	}
-	
-	@RequestMapping("/Lista")
-	public ModelAndView ListaDeUsuarios(){
-		ModelAndView mv = new ModelAndView("cadastro");
-		Iterable<Usuario> usuarios = ur.findAll();
-		mv.addObject("usuarios", usuarios);
-		return mv;
-	}
-	
+	}	
 
 }
