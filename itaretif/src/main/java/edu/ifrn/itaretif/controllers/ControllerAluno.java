@@ -40,7 +40,7 @@ public class ControllerAluno {
 	public String salvarAluno(@Valid Usuario usuario, BindingResult result, RedirectAttributes attributes){
 		
 		if(result.hasErrors()){
-			attributes.addAttribute("mensagem", "Verifique os campos!");
+			attributes.addFlashAttribute("mensagem", "Verifique os campos!");
 			return "redirect:/cadastroAluno";
 		}
 		
@@ -53,7 +53,7 @@ public class ControllerAluno {
 		usuario.setSenha (new BCryptPasswordEncoder().encode (usuario.getSenha()));
 		
 		ur.save(usuario);
-		attributes.addAttribute("mensagem", "Cadastro feito com sucesso!");
+		attributes.addFlashAttribute("mensagem", "Cadastro feito com sucesso!");
 		return "redirect:/cadastroAluno";
 	}	
 
