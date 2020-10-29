@@ -11,6 +11,7 @@ public class ItaretifApplication {
 		SpringApplication.run(ItaretifApplication.class, args);
 		
 		System.out.print(new BCryptPasswordEncoder().encode("123"));
+		
 	}
 		
 }
