@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+<title>Setores</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+          
+  <table class="table">
+  <h2>Setores Cadastrados</h2>
+    <thead>
+      <tr>
+        <th>Nome do Setor</th>
+        <th>Sigla</th>
+        <th>Descrição</th>
+        <th>Horário</th>
+        <th>Ações</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+
+	           <tr th:each="setor : ${setores}">
+	           <td><span th:text="${setor.nome}"></span></td>
+	           <td><span th:text="${setor.sigla}"></span></td>
+               <td><span th:text="${setor.descricao}"></span></td>
+               <td><span th:text="${setor.horario}"></span></td>
+               <td>
+	               <a th:href="${(#mvc.url('CS#deletarSetor').arg(0, setor.id)).build()}">Deletar</a>
+	               <a th:href="@{/editarSetor/{id} (id=${setor.id})}">Alterar</a>
+               </td>
+      </tr>
+      
+     </tbody>
+     
+    </table>
+    
+     </div>
+     
+    </body>
+    
+    </html>
+
+
