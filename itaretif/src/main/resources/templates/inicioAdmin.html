@@ -58,27 +58,9 @@
 		
 		<h1 style="color: #25A25A; font-family: fantasy; text-align: center; margin-bottom: 0px; margin-top: 20px;">Espaço para cadastros</h1>
 		
-	 <div class="contem" style="display: inline-block;
-		  width: ;
-		  margin-left: 80px;
-          margin-right: 80px;
-          margin-bottom: 80px;
-          margin-top: 40px;
-          padding-left: 90px;
-          padding-right: 90px;
-          padding-bottom: 30px;
-          padding-top: 80px;">
+	 <div class="contem">
 	
-		<div class="cont_" style="display: inline-block;
-		 float: left;
-		 text-align: justify;
-		 margin-left: 0px;
-         margin-right: 10px;
-         margin-bottom: 20px;
-         margin-top: -60px;
-         padding: 30px;
-         border: solid 0.5px grey;
-         border-radius: 7px 7px 7px;">
+		<div class="cont_">
 		
 			<form action="/admin/inicio" method="post">
 			
@@ -113,40 +95,32 @@
 		    </form>
 	</div>
 	
-	<div class="cont_1" style="display: inline-block;
-		 float: left;
-		 text-align: justify;
-		 margin-left: 20px;
-         margin-right: 0px;
-         margin-bottom: 0px;
-         margin-top: -60px;
-         padding: 30px;
-         border: solid 0.5px grey;
-         border-radius: 7px 7px 7px;">
+	<div class="cont_1">
          
-			<form>
+			<form action="/cadastrarServidor" method="post">
 				<h1 style="font-size: 22px; margin-bottom: 30px; color: #25A25A; font-family: fantasy!important;">Nov@ Servidor(a):</h1>
 			  <div class="form-row">
-			    <div class="col-md-6 mb-3">
-			      <label for="validationTooltip01">Primeiro nome</label>
+			    <div style="width: 100%!important; margin-bottom: 15px;">
+			      <label for="validationTooltip01">Nome</label>
 			      <input type="text" name="nome" class="form-control" id="validationTooltip01">
-			    </div>
-			    <div class="col-md-6 mb-3">
-			      <label for="validationTooltip02">Sobrenome</label>
-			      <input type="text" name="sobrenome" class="form-control" id="validationTooltip02">
 			    </div>
 			  </div>
 			  
 			  <div class="form-row">
-			  	<div style="width: 100%!important; margin-bottom: 15px;">
+			  	<div>
 			      <label for="validationTooltip03">Horário de trabalho</label>
-			      <input type="text" name="horarios" class="form-control" id="validationTooltip03">
+			      <input type="text" name="horario" class="form-control" id="validationTooltip03">
+			    </div>
+			    
+			    <div style="margin-left: 5px;">
+			      <label for="validationTooltip03">Setor</label>
+			      <input type="text" name="setor" class="form-control" id="validationTooltip03">
 			    </div>
 			  </div>
 			  
 			  <div class="mb-3">
 			    <label for="validationTextarea">Descrição</label>
-			    <textarea class="form-control" id="validationTextarea" placeholder="Fale um pouco sobre o servidor"></textarea>
+			    <textarea  name="descricao" class="form-control" id="validationTextarea" placeholder="Fale um pouco sobre o servidor"></textarea>
 			  </div>
 			  
 			  <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
@@ -157,19 +131,9 @@
 				
 	</div>
 	
-		 <!-- <div class="cont_2" style="display: inline-block;
-								 	float: left;
-								 	text-align: justify;
-								 	margin-left: 30px;
-						         	margin-right: 0px;
-						         	margin-bottom: 0px;
-						         	margin-top: -60px;
-						         	padding: 30px;
-						         	border: solid 0.5px grey;
-						         	border-radius: 7px 7px 7px;">
-			
-				
-		</div> -->
+ 		<div class="cont_2">
+ 			
+		</div>
 	
 </body>
 
