@@ -34,7 +34,7 @@ public class ControllerProjeto {
 			
 		}
 		
-		@RequestMapping(value = "/projetos/{id}", method = RequestMethod.GET )
+		@RequestMapping(value = "/projetos/{id}", method = RequestMethod.GET)
 		public ModelAndView getProjetoDetails(@PathVariable("id") long id) {
 			ModelAndView mv = new ModelAndView("projetosDetails");
 			Projeto projeto = ProjetoService.findById(id);
@@ -42,16 +42,16 @@ public class ControllerProjeto {
 			return mv;
 		}
 		
-		 @RequestMapping(value="/novoprojeto", method=RequestMethod.GET)
+		 @RequestMapping(value="/novoProjeto", method=RequestMethod.GET)
 		    public String getProjetoForm(){
 		        return "projetoForm";
 		    }
 
-		    @RequestMapping(value="/novoprojeto", method=RequestMethod.POST)
+		    @RequestMapping(value="/novoProjeto", method=RequestMethod.POST)
 		    public String saveProjeto(@Valid Projeto projeto, BindingResult result, RedirectAttributes attributes){
 		        if(result.hasErrors()){
 		            attributes.addFlashAttribute("mensagem", "Verifique se os campos obrigatórios foram preenchidos!");
-		            return "redirect:/novoprojeto";
+		            return "redirect:/novoProjeto";
 		        }
 		      
 		        ProjetoService.save(projeto);
