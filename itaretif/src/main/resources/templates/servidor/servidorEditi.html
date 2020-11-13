@@ -2,25 +2,80 @@
  <html xmlns:th="http://thymeleaf.org"
        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
-	<title>Edição de Servidor</title>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>ItaretIF/admin/Edição de Servidor</title>
+	<link rel="shortcut icon" href="img/icon2.png">
+	<link rel="stylesheet" type="text/css" href="/estilo/edit.css">
+	
+	<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>Edição de Servidor</h1>
-	<form action="/editarServidor" method="post" th:object="${servidor}" autocomplete="off">
+
+<div class="menu">
+	<a href="/" style="margin-left: 150px;">
+		<img class="icon_2" src="/img/icon2.png"></img>
+	</a>
+			    
+	<a href="/admin/inicio" style="float: right; text-decoration: none; margin: 18px 150px 0px 0px;">Cancelar</a>
+</div>
+
+	<div class="container__">
+		<h1 class="cabecalho">Edição de Servidor</h1>
+		<div class="cont">
+ 		  <form action="/editarServidor" method="post" th:object="${servidor}" autocomplete="off">
+ 		  
+ 		  	<input type="hidden" th:field="*{id}">
+ 		  	
+			  <div class="form-row">
+			    <div style="width: 100%!important;">
+			      <label for="validationTooltip01">Nome</label>
+			      <input type="text" name="nome" class="form-control" id="validationTooltip01" th:field="*{nome}">
+			    </div>
+			  </div>
+			  
+			  <div class="form-row">
+			  	<div style="width: 100%!important; margin-top: 20px;">
+			      <label for="validationTooltip03">Horário de trabalho</label>
+			      <input type="text" name="horario" class="form-control" id="validationTooltip03" th:field="*{horario}">
+			    </div>
+			  </div>
+			  
+			  <div class="form-row">
+			  	<div style="width: 100%!important; margin-top: 20px;">
+			      <label for="validationTooltip03">Setor de trabalho</label>
+			      <input type="text" name="setor" class="form-control" id="validationTooltip03" th:field="*{setor}">
+			    </div>
+			  </div>
+			  
+			  <div class="mb-3" style="margin-top: 20px;">
+			    <label for="validationTextarea">Descrição</label>
+			    <textarea  name="descricao" class="form-control" id="validationTextarea" th:field="*{descricao}"></textarea>
+			  </div>
+			  
+			  <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+
+				<button type="submit" class="btn btn-outline-success" style="float: right;">Salvar alterações</button>
+			</form>
+		  </div>
+</div>
+<!-- 	<form action="/editarServidor" method="post" th:object="${servidor}" autocomplete="off"> -->
 	
-		<input type="hidden" th:field="*{id}">
+<!-- 		<input type="hidden" th:field="*{id}"> -->
 		
-		Nome: <input type="text" value="" name="nome"/>
-		Horário de trabalho:  <input type="text" value="" name="horario">
-		Setor:  <input type="text" value="" name="setor"/>
-		Descrição: <input type="text" value="" name="descricao"/>
+<!-- 		Nome: <input type="text" value="" name="nome" th:field="*{nome}"/> -->
+<!-- 		Horário de trabalho:  <input type="text" value="" name="horario" th:field="*{horario}"/> -->
+<!-- 		Setor:  <input type="text" value="" name="setor" th:field="*{setor}"/> -->
+<!-- 		Descrição: <input type="text" value="" name="descricao" th:field="*{descricao}"/> -->
 		
 	  	
-	  	<button type="submit">Salvar Alterações</button>
-		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-	</form>
+<!-- 	  	<button type="submit">Salvar Alterações</button> -->
+<!-- 		<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" /> -->
+<!-- 	</form> -->
 
 
 </body> 
-
+</html>
