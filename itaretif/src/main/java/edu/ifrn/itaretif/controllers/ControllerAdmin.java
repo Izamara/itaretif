@@ -91,7 +91,7 @@ public class ControllerAdmin {
 		public String deletarUsuario(String matricula){
 			Usuario usuario = ur.findByMatricula(matricula);
 			ur.delete(usuario);
-			return "redirect:/editar";
+			return "redirect:/admin/listar";
 		}
 		
 		

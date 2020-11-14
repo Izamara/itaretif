@@ -30,10 +30,9 @@ public class CadastroController {
 
 	
 	@RequestMapping(value="/cadastro", method=RequestMethod.GET)
-		public ModelAndView formCadastro(){
-		ModelAndView mve = new ModelAndView("paginaDeCadastro");
+		public String formCadastro(){
 		
-		return mve;
+		return "paginaDeCadastro";
 	}
 
 	

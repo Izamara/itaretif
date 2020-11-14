@@ -17,21 +17,20 @@ public class ControllerSetor {
 	@Autowired
 	private SetorRepository sr;
 		
-		@RequestMapping(value="/cadastrarSetor", method=RequestMethod.GET)
+		@RequestMapping(value="/admin/cadastrarSetor", method=RequestMethod.GET)
 		public String form(){
-	        	return "setor/formSetor"; 
+	        	return "inicioAdmin"; 
 
 	    } 
 		
 		
-		@RequestMapping(value="/cadastrarSetor", method=RequestMethod.POST)
+		@RequestMapping(value="/admin/cadastrarSetor", method=RequestMethod.POST)
 		public String form(Setor setor){
 			  
 			sr.save(setor);
 
-			return "redirect:/cadastrarSetor";
+			return "redirect:/admin/cadastrarSetor";
 
-		
 	   }
 		
 		    @RequestMapping(value="/listarSetores", method= RequestMethod.GET)
@@ -70,6 +69,4 @@ public class ControllerSetor {
 	           	
 	           }
  	
-	    
-		
 }

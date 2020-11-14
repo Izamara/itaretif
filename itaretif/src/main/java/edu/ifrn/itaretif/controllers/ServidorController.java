@@ -16,27 +16,22 @@ public class ServidorController {
 	@Autowired
 	private ServidorRepository srr;
 	
-		@RequestMapping(value="/cadastrarServidor", method=RequestMethod.GET)
+		@RequestMapping(value="/admin/cadastrarServidor", method=RequestMethod.GET)
 		public String form(){
 			
 			return "servidor/formServidor";
 		}
 
-		
-
-		@RequestMapping(value="/cadastrarServidor", method=RequestMethod.POST)
+		@RequestMapping(value="/admin/cadastrarServidor", method=RequestMethod.POST)
 		public String form(Servidor servidor){
 			  
 			srr.save(servidor);
 
-			return "redirect:/cadastrarServidor";
+			return "redirect:/admin/cadastrarServidor";
 
-		
 	   }
-		
-		 
-				
-		    @RequestMapping(value="/listarServidores", method= RequestMethod.GET)
+			
+		    @RequestMapping(value="/admin/listarServidores", method= RequestMethod.GET)
 			public ModelAndView listarServidores(){
 		    	ModelAndView mv = new ModelAndView("servidor/listarServidores");
 		    	Iterable<Servidor> servidores = srr.findAll();
@@ -48,7 +43,7 @@ public class ServidorController {
 			    public String deletarServidor(long id){
 			    Servidor servidor = srr.findById(id);
 			    srr.delete(servidor);
-			    return "redirect:/listarServidores";
+			    return "redirect:/admin/listarServidores";
 			    
 		    }
 		
@@ -67,7 +62,7 @@ public class ServidorController {
 	            public ModelAndView alterarServidor(Servidor servidor){
 		            ModelAndView mv = new ModelAndView();
 		            srr.save(servidor);
-		            mv.setViewName("redirect:/listarServidores");
+		            mv.setViewName("redirect:/admin/listarServidores");
 		            return mv;
 	           	
 	           }

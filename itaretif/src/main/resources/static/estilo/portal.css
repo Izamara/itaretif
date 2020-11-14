@@ -3,6 +3,9 @@
     margin:0;
 }
 
+.dimensoes { width: 100%;
+			 margin-top:0px;
+}
 
 .obs{ color: #25A25A;
       margin-top: 0px;
@@ -13,7 +16,7 @@
 }
 
 
-body { font-family: cursive!important;
+body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji!important;
  
 }
 
@@ -61,12 +64,12 @@ th, td { padding: 15px;
 
 
 
-.icon_1 { margin: 0px;
-		  padding: 10px;
-          height: 50px;
-          width: 50px;
-          border: solid 1.5px #25A25A;
-          border-radius: 7px 7px 7px;
+.icon_1 { margin: 0;
+		  padding: 5px;
+          height: 60px;
+          width: 60px;
+          border: solid 2px #25A25A;
+          border-radius: 50%;
 }
 
 
@@ -175,17 +178,13 @@ figcaption { color: #25A25A;
 }
 
 
-.size { font-size: 25px;
-
-}
-
-
 .size_ { float: left;
          display: inline-block;
 }
 
 
 hr { margin-bottom: 30px;
+	 font-size: 25px;
 
 }
 
@@ -205,14 +204,26 @@ h3 { margin-left: -30px;
      border-left: groove;
 }
 
-h4 { color: black;
-	 margin-bottom: 1em;
-	
+h4 { color: #fff;
+	 margin: 0px;
+	 padding: 20px;
+}
+
+
+h5 {color: #fff;
+	background-color: #25a25a;
+
 }
 
 
 h6 { font-family: fantasy;
 
+}
+
+
+.h6 { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;;
+	  margin: 50px 0px 0px 100px;
+	  color: gray;
 }
 
 
@@ -222,6 +233,7 @@ h6 { font-family: fantasy;
         margin: 0px;
         border: solid #25A25A 1px;
         border-radius: 7px;
+        transition: all 0.5s ease;
 
 }
 
@@ -238,15 +250,17 @@ h6 { font-family: fantasy;
 
 .puma:hover{ width: 150px;
              height: 150px;
-             box-shadow: -4px 4px 4px #b3b3b3;
+             box-shadow: 0px 6px 6px #b3b3b3;
              margin: 0px;
 }
 
 
 footer{ text-align: justify-all;
-        margin: 50px 50px 0px 50px;
+        margin: -50px 0px 0px 0px;
         font-weight: bold;
-        color: #25A25A;
+        color: white;
+        background-color: #25A25A;
+        height: 200px;
 
 }
 
@@ -275,17 +289,52 @@ ul { text-align: justify;
 p { text-align: justify;
     line-height: 1.5;
     font-size: 20px;
-    font-family: cursive;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 
 }
 
 
-.color{ font-family: fantasy;
-        color: #25A25A;
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-bottom: 20px; 
+.p { text-align: center;
+	 color: #fff;
+	 background-color: #25a25a;
+}
 
+
+.color{ font-family: Ubuntu, sans-serif;
+        color: white;
+        background-color: #25A25A;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #25a25a;
+        border-radius: 50px;
+        width: 500px;
+ 
+}
+
+
+.color2{ font-family: Ubuntu, sans-serif;
+         color: white;
+         background-color: #25A25A;
+         margin-top: 0px;
+         margin-bottom: 50px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         border: 1px solid #25a25a;
+         border-radius: 50px;
+         width: 300px;
+ 
+}
+
+
+.texto { font-family: Ubuntu, sans-serif;
+         color: white;
+         background-color: #25A25A;
+         margin-top: 0px;
+         padding: 10px 0px 10px 10px;
+         border: 1px solid #25a25a;
+         border-radius: 50px;
  
 }
 
