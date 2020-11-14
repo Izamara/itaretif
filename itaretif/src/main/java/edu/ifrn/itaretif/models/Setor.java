@@ -30,6 +30,9 @@ public class Setor implements Serializable{
 	@NotBlank
 	private String horario;
 	
+	@NotBlank
+	private String atendimento;
+	
 	public long getId() {
 		return id;
 	}
@@ -59,6 +62,12 @@ public class Setor implements Serializable{
 	}
 	public void setHorario(String horario) {
 		this.horario = horario;
+	}
+	public String getAtendimento() {
+		return atendimento;
+	}
+	public void setAtendimento(String atendimento) {
+		this.atendimento = atendimento;
 	}
 	
 	
