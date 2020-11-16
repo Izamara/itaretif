@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Projetos</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="shortcut icon" href="/img/icon2.png">
+  	<link rel="stylesheet" type="text/css" href="/estilo/projetosDetails.css">
+</head>
+<body>
+
+    <header>
+       <div class="menu">
+	    	<a href="/" class="navbar-brand">
+	        	<img class="icon_2" src="/img/icon.png"></img>
+	      	</a>
+	      	<a href="/newprojeto" class="btn btn-primary a2" role="button">Novo Projeto</a>	
+	    </div>
+
+    </header>
+
+    <main>
+    <div class="container"  style="width: 60%; padding-top: 100px; padding-bottom: 30px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
+                <li class="breadcrumb-item"><a href="/projetos">Projetos</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Projeto</li>
+            </ol>
+        </nav>
+        <article>
+            <h1 class="card-title" style="font-weight: bold; margin-bottom: 20px;"><span th:text="${projetos.titulo}"></span></h1>
+            <p class="card-subtitle mb-2 text-muted">
+                <i class="material-icons">person_outline</i>
+                <span th:text="${projetos.autor}"></span>
+                <br>
+            </p>
+            <section>
+                <p class="card-text" style="margin-top: 40px;"><span th:utext="${projetos.descricao}"></span></p>
+            </section>
+        </article>
+    </div>
+    </main>
+
+</body>
+</html>

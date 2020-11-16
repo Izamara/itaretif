@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Projetos</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="style/styleCss.css"/>-->
+    <link rel="shortcut icon" href="img/icon2.png">
+  	<link rel="stylesheet" type="text/css" href="estilo/projetos.css">
+</head>
+<body>
+
+    <header>
+       <div class="menu">
+	    	<a href="/" class="navbar-brand">
+	        	<img class="icon_2" src="img/icon.png"></img>
+	      	</a>
+	    	<a class="" href="/campus" style="margin-top: 20px;">O campus</a>
+	    	<a class="" href="/regras" style="margin-top: 20px;">Regras</a>
+	    	<a class="" href="/lajes" style="margin-top: 20px;">Lajes/RN</a>
+	      	<a class="" href="/mapeamento" style="margin-top: 20px;">Mapeamento</a>
+	      	<a class="" href="/projetos" style="margin-top: 20px;">Projetos</a>
+	      	<a class="" href="/sobre" style="margin-top: 20px;">Sobre nós</a>
+		    <a class="" href="/login" style="margin-top: 20px; float: right;">Login</a>
+		    <a href="/serv/novoprojeto" class="btn btn-success a2" role="button" sec:autorize="hasRole('ROLE_SERVIDOR')">Novo projeto</a> 	
+	    </div>
+	  	
+    </header>
+
+    <section>
+    <div class="container"  style="width: 60%; padding-bottom: 30px; padding-top: 50px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
+                <li class="breadcrumb-item active" aria-current="page">Projetos</li>
+            </ol>
+        </nav>
+        <div class="card shadow-sm bg-white rounded" style="margin-top: 20px;" th:each="projeto : ${projetos}">
+            <div class="card-body">
+                <p class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">
+                    <span th:text="${projeto.autor}"></span>
+                </p>
+                <a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, projeto.id)).build()}"><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"><span th:text="${projeto.titulo}"></span></h4></a>
+                <p class="card-text"><span th:utext="${#strings.abbreviate(projeto.descricao,400)} "></span></p>
+                <!--<a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a>-->
+            </div>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>
