@@ -94,5 +94,13 @@ public class ControllerAdmin {
 			return "redirect:/admin/listar";
 		}
 		
+		@RequestMapping("/{matricula}")
+		public ModelAndView detalharUsuario(@PathVariable("matricula") String matricula){
+			Usuario usuario = ur.findByMatricula(matricula);
+			ModelAndView mv = new ModelAndView("usuarioDetalhes");
+			mv.addObject("usuario", usuario);
+			return mv;
+		}
+		
 		
 }

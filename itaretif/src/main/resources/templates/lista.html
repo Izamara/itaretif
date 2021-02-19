@@ -56,7 +56,7 @@
 			<tbody>
 				<tr th:each="usuario : ${usuarios}">
 					<td><samp th:text= ${usuario.id}></samp></td>
-					<td><samp th:text= ${usuario.nome}></samp></td>
+					<td><a th:href="${(#mvc.url('CA#detalharUsuario').arg(0, usuario.matricula)).build()}"><samp th:text= ${usuario.nome}></samp></a></td>
 					<td><samp th:text= ${usuario.matricula}></samp></td>
 					<td><samp th:text= ${usuario.senha}></samp></td>
 					<td>
