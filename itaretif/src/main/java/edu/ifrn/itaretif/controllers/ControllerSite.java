@@ -1,26 +1,37 @@
 package edu.ifrn.itaretif.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import edu.ifrn.itaretif.models.Comentario;
+import edu.ifrn.itaretif.models.Setor;
 import edu.ifrn.itaretif.repositories.ComentarioRepository;
+import edu.ifrn.itaretif.repository.SetorRepository;
 
 @Controller
 public class ControllerSite {
 	
-	private ComentarioRepository cr;
+	@Autowired
+	private SetorRepository sr;
+
 	
 	@RequestMapping("/")
 	public String index() {
 		return "inicio";
 	}
 	
-	@RequestMapping("/campus")
-	public String campus() {
-		return "o campus";
+	@RequestMapping(value="/campus", method= RequestMethod.GET)
+	public ModelAndView listarSetores(){
+    	ModelAndView mv = new ModelAndView("o campus");
+    	Iterable<Setor> setores = sr.findAll();
+    	mv.addObject("setores", setores);
+    	return mv;
+    	
 	}
+
 	
 	@RequestMapping("/regras")
 	public String regras() {

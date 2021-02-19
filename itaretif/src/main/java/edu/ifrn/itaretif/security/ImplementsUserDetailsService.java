@@ -1,19 +1,15 @@
 package edu.ifrn.itaretif.security;
 
-import javax.transaction.Transactional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import edu.ifrn.itaretif.models.Usuario;
 import edu.ifrn.itaretif.repository.UsuarioRepository;
 
-@Repository
-@Transactional
+@Component
 public class ImplementsUserDetailsService implements UserDetailsService {
 
 	@Autowired

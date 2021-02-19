@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="estilo/img.css">
 	<link rel="stylesheet" type="text/css" href="estilo/containers.css">
 	<link rel="stylesheet" type="text/css" href="estilo/menus.css">
+	<link rel="stylesheet" type="text/css" href="estilo/table.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -31,7 +32,7 @@
       	<a class="background" href="/cadastro" style="margin-top: 17px; float: right;">Cadastre-se!</a>
 	    <a class="background" href="/login" style="margin-top: 17px; float: right;">Login</a>
   	</div>
-
+  	
   	<div class="center">
     	<center><h1 class="estilofonte" style="font-size: 80px; margin-top: 0px; margin-bottom: 0px; padding-top: 1.5px; font-size: 160px; color: black; font-weight: bold;">Itaret</h1></center>
       	<h6 style="color: black; font-size: 53.5px; font-weight: bold; margin-bottom: 0px; padding-top: 3px;">O website perfeito para os leigos</h6>
@@ -39,7 +40,11 @@
     </div>
 </div>
 
-<h6 class="h6">ItaretIF / O <i>Campus</i> / <a href="#serv">Servidores</a> / <a href="#galeria">Galeria</a></h6>
+	<nav id="menun2">
+		<a class="newbg" href="#servidores">Servidores</a>
+		<a class="newbg" href="#setores" style="padding: 12px 28px 14px 25px;">Setores</a>
+	<!-- <a class="newbg" href="#03" style="padding: 12px 30px 14px 27px;">Galeria</a> -->
+    </nav>
 
 <div class="container_">
 
@@ -70,7 +75,7 @@
 
 </div>
 
-<div class="container_2" id="serv">
+<div class="container_2" id="servidores">
 
 		<div class="container_1">
 
@@ -86,840 +91,871 @@
 
 			<div class="accordion" id="accordionExample">
 
-	  	<!--01-->
-	  	<div class="card">
-
-	    <div class="card-header" id="headingOne">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-	          Alessandro 
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        <center>Coordenador da COLAB e "carinha das notificações"
-                    Alessandro é o cara responsável, dentre várias outras 
-                    coisas, por "vigiar" você. É ele quem te dará notificação 
-                    caso esteja sem farda ou de chinelo pelo IF em horário de aula. 
-                    Claro que existem outros motivos pra ele te dar notificação, mas 
-                    os outros motivos você pode encontrar em <a href="/regras" style="color: green;">Regras</a>.</center>
-	        <br>
-	        <center><b>Horário de trabalho:</b></center>
-	        <center>Segunda - Sexta: 07H às 12H e 14H às 17H</center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  	<!-- 02 -->
-	    <div class="card">
-
-	    <div class="card-header" id="headingTwo">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-	          André Luiz Rodrigues Bezerra
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 03 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThree">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-	          Bruna Laís Campos do Nascimento
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 04 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingFour">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-	          Cássia de Fátima Matos dos Santos
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        <br>
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 05 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingFive">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-	          Cedrick Cunha Gomez da Silva
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 06 -->
-	  <div class="card">
-	    <div class="card-header" id="headingSix">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-	          Dannilo Martins Cunha
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- 07 -->
-	  <div class="card">
-	    <div class="card-header" id="headingSeven">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-	          David Martins
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- 08 -->
-	  <div class="card">
-	    <div class="card-header" id="headingEight">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-	          Diogo Eugênio
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-	  </div>
-
-	  <!-- 09 -->
-	  <div class="card">
-	    <div class="card-header" id="headingNine">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-	           Ermerson de Oliveira Capistrano
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	       
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 10 -->
-	  <div class="card">
-	    <div class="card-header" id="headingTen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-	          Eugênio
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b> </center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 11 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingEleven">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-	          Felipe Alves Paulo Cavalcanti
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	       
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 12 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwelve">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-	          Fernando Antônio de Melo
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center> 
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 13 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-	          Fernando Helton Linhares Soares
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center> 
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 14 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingFourteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-	          Freud Araujo Medeiros
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 15 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingFiveteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
-	          Geraldo Freire de Lima
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseFiveteen" class="collapse" aria-labelledby="headingFiveteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	<!-- 16 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingSixteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-	          Gleiferson de Lima Viana
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 17 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingSeventeen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-	          Jader Luiz
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 18 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingEighteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-	          Jarson Alves Medeiros da Silva
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 19 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingNineteen">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-	          Jeferson Pinto Torres
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 20 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwenty">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-	          João Batista de Medeiros 
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
-	      <div class="card-body">
-	      	<center><b></b></center>
-	      	
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 21 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyOne">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
-	          João Saturnino da Silva Neto
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 22 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyTwo">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
-	          Jomar Ferreira dos Santos
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 23 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyThree">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
-	          Karlo
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyThree" class="collapse" aria-labelledby="headingTwentyThree" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <b></b>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 24 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyFour">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
-	          Empty
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	        
-	        <center></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 25 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyFive">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
-	          Leônidas de Lima Cândido de Araújo
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	        
-	        <center><b></b></center>
-	        
-	        <center></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 26 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentySix">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySix" aria-expanded="false" aria-controls="collapseTwentySix">
-	          Luana Melo Alves
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	       
-	        <b></b>
-	    </div>
-	  </div>
-	  
-	 </div>
-
-	  <!-- 27 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentySeven">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven">
-	          Luciana Maria Araujo Rabelo
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-	    
-	  </div>
-
-	  <!-- 28 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyEight">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyEight" aria-expanded="false" aria-controls="collapseTwentyEight">
-	          Marcelo Victor dos Santos Alves
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyEight" class="collapse" aria-labelledby="headingTwentyEight" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 29 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingTwentyNine">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyNine" aria-expanded="false" aria-controls="collapseTwentyNine">
-	         Empty
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseTwentyNine" class="collapse" aria-labelledby="headingTwentyNine" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-	   
-	  </div>
-
-	  <!-- 30 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirty">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
-	         Osailton
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionExample">
-	      <div class="card-body">
-	          <center><b></b></center>
-	          
-	          <center></center>
-	          
-	          <center></center>
-	          
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 31 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtyOne">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyOne" aria-expanded="false" aria-controls="collapseThirtyOne">
-	          Poliana
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtyOne" class="collapse" aria-labelledby="headingThirtyOne" data-parent="#accordionExample">
-	      <div class="card-body">
-	       <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 32 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtyTwo">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyTwo" aria-expanded="false" aria-controls="collapseThirtyTwo">
-	          Robercy Alves da Silva
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtyTwo" class="collapse" aria-labelledby="headingThirtyTwo" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center></center>
-	       
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 33 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtyThree">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyThree" aria-expanded="false" aria-controls="collapseThirtyThree">
-	          Samara Freitas Oliveira
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtyThree" class="collapse" aria-labelledby="headingThirtyThree" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 34 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtyFour">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyFour" aria-expanded="false" aria-controls="collapseThirtyFour">
-	         Empty
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtyFour" class="collapse" aria-labelledby="headingThirtyFour" data-parent="#accordionExample">
-	      <div class="card-body">
-	      	<center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 35 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtyFive">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyFive" aria-expanded="false" aria-controls="collapseThirtyFive">
-	         Vladson
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtyFive" class="collapse" aria-labelledby="headingThirtyFive" data-parent="#accordionExample">
-	      <div class="card-body">
-	        <center><b></b></center>
-	        
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	  </div>
-
-	  <!-- 36 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtySix">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtySix" aria-expanded="false" aria-controls="collapseThirtySix">
-	         Washington dos Santos
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtySix" class="collapse" aria-labelledby="headingThirtySix" data-parent="#accordionExample">
-	      <div class="card-body">
-	      	<center><b></b></center>
-	      	
-	      	<center></center>
-	      	
-	        <center></center>
-	      </div>
-	    </div>
-
-	    </div>
-
-	    <!-- 37 -->
-	  <div class="card">
-
-	    <div class="card-header" id="headingThirtySeven">
-	      <h2 class="mb-0">
-	        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtySeven" aria-expanded="false" aria-controls="collapseThirtySeven">
-	         Zoélia Camila
-	        </button>
-	      </h2>
-	    </div>
-
-	    <div id="collapseThirtySeven" class="collapse" aria-labelledby="headingThirtySeven" data-parent="#accordionExample">
-	      <div class="card-body">
-	      	<center><b></b></center>
-	      	
-	      	<center></center>
-	      	
-	        <center><b></b></center>
-	      </div>
-	    </div>
-
-	    </div>
+		  	<!--01-->
+		  	<div class="card">
+	
+		    <div class="card-header" id="headingOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		          Alessandro 
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        <center>Coordenador da COLAB e "carinha das notificações"
+	                    Alessandro é o cara responsável, dentre várias outras 
+	                    coisas, por "vigiar" você. É ele quem te dará notificação 
+	                    caso esteja sem farda ou de chinelo pelo IF em horário de aula. 
+	                    Claro que existem outros motivos pra ele te dar notificação, mas 
+	                    os outros motivos você pode encontrar em <a href="/regras" style="color: green;">Regras</a>.</center>
+		        <br>
+		        <center><b>Horário de trabalho:</b></center>
+		        <center>Segunda - Sexta das 07:00 às 12:00 e das 14:00 às 17:00</center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  	<!-- 02 -->
+		    <div class="card">
+	
+		    <div class="card-header" id="headingTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          André Luiz Rodrigues Bezerra
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 03 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          Bruna Laís Campos do Nascimento
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 04 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingFour">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		          Cássia de Fátima Matos dos Santos
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        <br>
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 05 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingFive">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		          Cedrick Cunha Gomez da Silva
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 06 -->
+		  <div class="card">
+		    <div class="card-header" id="headingSix">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+		          Dannilo Martins Cunha
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+		  </div>
+	
+		  <!-- 07 -->
+		  <div class="card">
+		    <div class="card-header" id="headingSeven">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+		          David Martins
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+		  </div>
+	
+		  <!-- 08 -->
+		  <div class="card">
+		    <div class="card-header" id="headingEight">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+		          Diogo Eugênio
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+		  </div>
+	
+		  <!-- 09 -->
+		  <div class="card">
+		    <div class="card-header" id="headingNine">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+		           Ermerson de Oliveira Capistrano
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		       
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 10 -->
+		  <div class="card">
+		    <div class="card-header" id="headingTen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+		          Eugênio
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b> </center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 11 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingEleven">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+		          Felipe Alves Paulo Cavalcanti
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		       
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 12 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwelve">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+		          Fernando Antônio de Melo
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center> 
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 13 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+		          Fernando Helton Linhares Soares
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center> 
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 14 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingFourteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+		          Freud Araujo Medeiros
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 15 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingFiveteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFiveteen" aria-expanded="false" aria-controls="collapseFiveteen">
+		          Geraldo Freire de Lima
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseFiveteen" class="collapse" aria-labelledby="headingFiveteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		<!-- 16 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingSixteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+		          Gleiferson de Lima Viana
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 17 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingSeventeen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+		          Jader Luiz
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 18 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingEighteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+		          Jarson Alves Medeiros da Silva
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 19 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingNineteen">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+		          Jeferson Pinto Torres
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 20 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwenty">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+		          João Batista de Medeiros 
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<center><b></b></center>
+		      	
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 21 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+		          João Saturnino da Silva Neto
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 22 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+		          Jomar Ferreira dos Santos
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 23 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+		          Karlo
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyThree" class="collapse" aria-labelledby="headingTwentyThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <b></b>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 24 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyFour">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+		          Empty
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyFour" class="collapse" aria-labelledby="headingTwentyFour" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		        
+		        <center></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 25 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyFive">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+		          Leônidas de Lima Cândido de Araújo
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyFive" class="collapse" aria-labelledby="headingTwentyFive" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		        
+		        <center><b></b></center>
+		        
+		        <center></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 26 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentySix">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySix" aria-expanded="false" aria-controls="collapseTwentySix">
+		          Luana Melo Alves
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentySix" class="collapse" aria-labelledby="headingTwentySix" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		       
+		        <b></b>
+		    </div>
+		  </div>
+		  
+		 </div>
+	
+		  <!-- 27 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentySeven">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven">
+		          Luciana Maria Araujo Rabelo
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+		    
+		  </div>
+	
+		  <!-- 28 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyEight">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyEight" aria-expanded="false" aria-controls="collapseTwentyEight">
+		          Marcelo Victor dos Santos Alves
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyEight" class="collapse" aria-labelledby="headingTwentyEight" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 29 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingTwentyNine">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyNine" aria-expanded="false" aria-controls="collapseTwentyNine">
+		         Empty
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseTwentyNine" class="collapse" aria-labelledby="headingTwentyNine" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+		   
+		  </div>
+	
+		  <!-- 30 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirty">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
+		         Osailton
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionExample">
+		      <div class="card-body">
+		          <center><b></b></center>
+		          
+		          <center></center>
+		          
+		          <center></center>
+		          
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 31 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtyOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyOne" aria-expanded="false" aria-controls="collapseThirtyOne">
+		          Poliana
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtyOne" class="collapse" aria-labelledby="headingThirtyOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		       <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 32 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtyTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyTwo" aria-expanded="false" aria-controls="collapseThirtyTwo">
+		          Robercy Alves da Silva
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtyTwo" class="collapse" aria-labelledby="headingThirtyTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center></center>
+		       
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 33 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtyThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyThree" aria-expanded="false" aria-controls="collapseThirtyThree">
+		          Samara Freitas Oliveira
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtyThree" class="collapse" aria-labelledby="headingThirtyThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 34 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtyFour">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyFour" aria-expanded="false" aria-controls="collapseThirtyFour">
+		         Empty
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtyFour" class="collapse" aria-labelledby="headingThirtyFour" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 35 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtyFive">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyFive" aria-expanded="false" aria-controls="collapseThirtyFive">
+		         Vladson
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtyFive" class="collapse" aria-labelledby="headingThirtyFive" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <center><b></b></center>
+		        
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		  </div>
+	
+		  <!-- 36 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtySix">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtySix" aria-expanded="false" aria-controls="collapseThirtySix">
+		         Washington dos Santos
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtySix" class="collapse" aria-labelledby="headingThirtySix" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<center><b></b></center>
+		      	
+		      	<center></center>
+		      	
+		        <center></center>
+		      </div>
+		    </div>
+	
+		    </div>
+	
+		    <!-- 37 -->
+		  <div class="card">
+	
+		    <div class="card-header" id="headingThirtySeven">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtySeven" aria-expanded="false" aria-controls="collapseThirtySeven">
+		         Zoélia Camila
+		        </button>
+		      </h2>
+		    </div>
+	
+		    <div id="collapseThirtySeven" class="collapse" aria-labelledby="headingThirtySeven" data-parent="#accordionExample">
+		      <div class="card-body">
+		      	<center><b></b></center>
+		      	
+		      	<center></center>
+		      	
+		        <center><b></b></center>
+		      </div>
+		    </div>
+	
+		    </div>
 
 		</div>
 	</div>
+</div>
+	<div class="newcont" id="setores">
+	
+	<center><h1 class="color2">Setores</h1></center>
+	
+		<table class="table">
+			
+				<thead>
+					<tr class="tr">
+						<th>Setor</th>
+					     <th>Sigla</th>
+					     <th>Descrição</th>
+					     <th>Horário de funcionamento</th>
+					     <th>Atendimento</th>
+					</tr>
+				</thead>
+					
+				<tbody>
+					<tr th:each="setor : ${setores}">
+				    	<td style="width: 200px;"><span th:text="${setor.nome}"></span></td>
+				        <td><span th:text="${setor.sigla}"></span></td>
+			            <td style="width: 250px;"><span th:text="${setor.descricao}"></span></td>
+			            <td style="width: 150px;"><span th:text="${setor.horario}"></span></td>
+			            <td><span th:text="${setor.atendimento}"></span></td>		
+					</tr>
+				</tbody>
+			</table>
+	</div>
+	
+</body>
+</html>

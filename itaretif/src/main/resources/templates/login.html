@@ -13,12 +13,14 @@
 <body>
 	
 	<div class="titulo">
-		<a href="/"><img class="icon_2" src="img/icon2.png"></img></a>
+		<a href="/"><img class="icon_2" src="img/icon.png"></img></a>
 		
 		<h1>Faça login</h1>
 	</div>
 	
 	<div class="cont">
+	<th:block th:include="mv"></th:block>
+	
 		<div class="box">
 			<form action="" method="post">
 				  <div class="form-group">
@@ -38,7 +40,7 @@
 			</form>
 			
 			<div class="caixa">
-				<p>Novo aqui?! <a href="/cadastro">Crie logo sua conta. :3</a></p>
+				<p>Novo por aqui?! <a href="/cadastro">Crie logo sua conta!</a></p>
 			</div>
 			
 		</div>
