@@ -9,5 +9,7 @@ public interface ProjetoService {
 	List<Projeto> findAll();
 	Projeto findById(long id);
 	Projeto save(Projeto projeto);
+	void delete(Projeto projeto);
+	Projeto edit(Projeto projeto);
 	
 }

@@ -25,30 +25,33 @@
 	      	<a class="" href="/projetos" style="margin-top: 20px;">Projetos</a>
 	      	<a class="" href="/sobre" style="margin-top: 20px;">Sobre nós</a>
 		    <a class="" href="/login" style="margin-top: 20px; float: right;">Login</a>
-		    <a href="/serv/novoprojeto" class="btn btn-success a2" role="button" sec:autorize="hasRole('ROLE_SERVIDOR')">Novo projeto</a> 	
+		    <a href="/serv/novoprojeto" class="btn btn-success a2" role="button">Novo projeto</a>	
 	    </div>
 	  	
     </header>
+    
+<div class="section">
 
     <section>
     <div class="container"  style="width: 60%; padding-bottom: 30px; padding-top: 50px;">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
+            <ol class="breadcrumb" style="background-color: transparent; padding-left: 0px;">
                 <li class="breadcrumb-item active" aria-current="page">Projetos</li>
             </ol>
         </nav>
-        <div class="card shadow-sm bg-white rounded" style="margin-top: 20px;" th:each="projeto : ${projetos}">
+        <div class="card shadow-sm bg-white rounded" style="margin-top: 20px; border-radius: 10px!important; box-shadow: -1px 5px 20px #b3b3b3!important;" th:each="projeto : ${projetos}">
             <div class="card-body">
+                <a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, projeto.id)).build()}" style="color: #A32E25;"><h4 class="card-title" style="font-weight: bold; color: #A32E25; padding-top: 5px;"><span th:text="${projeto.titulo}"></span></h4></a>
                 <p class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">
                     <span th:text="${projeto.autor}"></span>
                 </p>
-                <a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, projeto.id)).build()}"><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"><span th:text="${projeto.titulo}"></span></h4></a>
-                <p class="card-text"><span th:utext="${#strings.abbreviate(projeto.descricao,400)} "></span></p>
-                <!--<a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a>-->
+                <p class="card-text"><span th:utext="${#strings.abbreviate(projeto.descricao,450)} "></span></p>
+                <!-- <a th:href="${(#mvc.url('CP#getProjetoDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a> -->
             </div>
         </div>
     </div>
     </section>
+</div>
 
 </body>
 </html>
