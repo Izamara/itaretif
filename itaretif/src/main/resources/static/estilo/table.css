@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+table { text-align: center!important;
+	
+}
+
+.tr { color: #fff;
+	  background-color: #25A25A;
+	  border-bottom: solid 0.5px #25a25a;
+}
