@@ -33,6 +33,11 @@
 }
 
 
+.container_0 { display: inline-block;
+               margin: 40px 0px 0px 25px;
+}
+
+
 .container_1 { margin-left: 0px;
                margin-right: 0px;
                margin-bottom: 80px;
@@ -51,6 +56,15 @@
                border: solid 1px #25A25A;
 /*                border-radius: 7px 7px 7px; */
                box-shadow: -5px 5px 20px #b3b3b3;
+}
+
+
+.newcont { display: inline-block;
+		   margin: 0px 80px 80px 80px;
+           padding: 80px 165px 60px 100px;
+           border: solid 1px #25A25A;
+/*         border-radius: 7px 7px 7px; */
+           box-shadow: -5px 5px 20px #b3b3b3;
 }
 
 
