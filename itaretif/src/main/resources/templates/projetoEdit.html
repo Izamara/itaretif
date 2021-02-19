@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://thymeleaf.org">
+<html xmlns:th="http://thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <title>Projetos</title>
     <!--Import Google Icon Font-->
@@ -30,33 +31,32 @@
     <section>
     <div class="container" style="width: 70%; padding-top: 100px; padding-bottom: 30px;">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
-                <li class="breadcrumb-item"><a href="/projetos">Projetos</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Novo Projeto</li>
+            <ol class="breadcrumb" style="background-color: transparent; padding-left: 0px;">
             </ol>
         </nav>
-        <div class="img">
         <div>
             <th:block th:include="mensagemValidacao"></th:block>
-            <form action="/serv/novoprojeto" method="post">
+            <form action="/serv/novoprojeto" method="post" th:object="${projetos}">
+            	
+            	<input type="hidden" th:field="*{id}">
+            
                 <div class="form-group">
-                    <input type="text" class="form-control" name="titulo" placeholder="Título *">
+                    <input type="text" class="form-control" name="titulo" placeholder="Título *" th:field="*{titulo}">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="autor" placeholder="Autor *">
+                    <input type="text" class="form-control" name="autor" placeholder="Autor *" th:field="*{autor}">
                 </div>
 
-                <textarea id="summernote" type="text" class="form-control" name="descricao" placeholder="Descrição *"></textarea>
+                <textarea id="summernote" type="text" class="form-control" name="descricao" placeholder="Descrição *" th:field="*{descricao}"></textarea>
 
                 <small class="form-text text-muted">(*) Campos obrigatórios</small>
                 
                 <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 
-                <button type="submit" class="btn btn-success" style="margin-top: 10px;">Publicar</button>
-                <a href="/projetos" class="btn btn-light" role="button" style="margin-top: 10px;">Cancelar</a>
+                <button type="submit" class="btn btn-success" style="margin-top: 10px;">Salvar alterações</button>
+                <a href="/projetos" class="btn btn-danger" role="button" style="margin-top: 10px;">Cancelar</a>
                 <!--<button type="submit" class="btn" style="margin-top: 10px;">Cancelar</button>-->
             </form>
-        </div>
         </div>
     </div>
     </section>

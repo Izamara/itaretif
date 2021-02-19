@@ -13,21 +13,33 @@ import edu.ifrn.itaretif.service.ProjetoService;
 public class ProjetoServiceImpl implements ProjetoService {
 
 	@Autowired
-	ProjetoRepository ProjetoRepository;
+	ProjetoRepository projetoRepository;
 	
 	@Override
 	public List<Projeto> findAll() {
-		return ProjetoRepository.findAll();
+		return projetoRepository.findAll();
 	}
 
 	@Override
 	public Projeto findById(long id) {
-		return ProjetoRepository.findById(id).get();
+		return projetoRepository.findById(id).get();
 	}
 
 	@Override
-	public Projeto save(Projeto post) {
-		return ProjetoRepository.save(post);
+	public Projeto save(Projeto projeto) {
+		return projetoRepository.save(projeto);
+	}
+	
+	
+	@Override
+	public void delete(Projeto projeto) {
+		projetoRepository.delete(projeto);
+	}
+	
+	
+	@Override
+	public Projeto edit(Projeto projeto) {
+		return projetoRepository.save(projeto);
 	}
 
 }

@@ -1,3 +1,32 @@
+.section { background-image: url('/img/projetodetails.jpg');
+		   background-repeat: no-repeat;
+		   background-size: cover!important;
+		   background-position: center;
+		   min-height: 700px;
+		   width: 100%;
+		   padding: 30px;
+/* 		   position: relative; */
+}
+
+
+.img  { background-repeat: no-repeat;
+	    background-size: cover!important;
+	    background-position: center;
+	    min-height: 700px;
+	    width: 100%;
+
+}
+
+
+.contem { border: solid 1px #dcdcdc; 
+		  padding: 20px;
+		  background-color: white;
+		  border-radius: 10px;
+		  box-shadow: -1px 5px 20px #b3b3b3;
+
+}
+
+
 .icon_2 { margin: 0;
 		  padding: 5px;
           height: 60px;
