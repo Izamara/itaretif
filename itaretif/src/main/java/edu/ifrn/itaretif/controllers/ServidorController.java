@@ -19,7 +19,7 @@ public class ServidorController {
 		@RequestMapping(value="/admin/cadastrarServidor", method=RequestMethod.GET)
 		public String form(){
 			
-			return "servidor/formServidor";
+			return "inicioAdmin";
 		}
 
 		@RequestMapping(value="/admin/cadastrarServidor", method=RequestMethod.POST)
