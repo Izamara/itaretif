@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import edu.ifrn.itaretif.models.Comentario;
-import edu.ifrn.itaretif.repositories.ComentarioRepository;
+import edu.ifrn.itaretif.repository.ComentarioRepository;
 
 @Controller
-public class ControllerComentario {
+public class ComentarioController {
 
 	@Autowired
 	private ComentarioRepository cr;
@@ -26,7 +26,7 @@ public class ControllerComentario {
 	
 	@GetMapping("/sobre")
 	public ModelAndView listaNoticias() {
-		ModelAndView mv = new ModelAndView("Sobre");
+		ModelAndView mv = new ModelAndView("/portal/Sobre");
 		Iterable<Comentario> comentario = cr.findAll();
 		mv.addObject("comentarios", comentario);
 		return mv;

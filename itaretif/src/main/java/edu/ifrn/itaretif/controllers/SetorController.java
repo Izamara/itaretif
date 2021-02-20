@@ -12,7 +12,7 @@ import edu.ifrn.itaretif.models.Setor;
 import edu.ifrn.itaretif.repository.SetorRepository;
 
 @Controller
-public class ControllerSetor {
+public class SetorController {
 	
 	@Autowired
 	private SetorRepository sr;

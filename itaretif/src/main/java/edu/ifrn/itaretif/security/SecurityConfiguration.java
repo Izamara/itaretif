@@ -15,14 +15,7 @@ public class SecurityConfiguration {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception {
 	    
-		builder.userDetailsService(detailsService)	.passwordEncoder(new BCryptPasswordEncoder());
-	    	
-//		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-//		builder
-//			.inMemoryAuthentication()
-//			.withUser("joao").password(encoder.encode("123")).roles("ADMIN", "USUARIO")
-//			.and()
-//			.withUser("jose").password(encoder.encode("123")).roles("USUARIO", "AVALIADOR");
+		builder.userDetailsService(detailsService).passwordEncoder(new BCryptPasswordEncoder());
 	}
 
 	@Bean

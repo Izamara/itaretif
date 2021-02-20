@@ -16,24 +16,18 @@ import edu.ifrn.itaretif.repository.RoleRepository;
 import edu.ifrn.itaretif.repository.UsuarioRepository;
 
 @Controller
-public class ControllerServidor {
+public class ProfessorController {
 	
 	@Autowired
 	private UsuarioRepository ur;
 	
 	@Autowired
 	private RoleRepository rr;
-	
-	@RequestMapping(value="/serv/inicio", method=RequestMethod.GET)
-		public String servidor(){
-		return "inicioServidor";
-	}
-	
 
 	
 	@RequestMapping(value="/cadastroServ", method=RequestMethod.GET)
 	public String cadastroServidor(){
-		return "cadastroServ";
+		return "cadastro/cadastroServ";
 		
 	}
 	

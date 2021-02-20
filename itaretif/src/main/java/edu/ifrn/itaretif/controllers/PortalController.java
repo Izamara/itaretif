@@ -8,11 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import edu.ifrn.itaretif.models.Comentario;
 import edu.ifrn.itaretif.models.Setor;
-import edu.ifrn.itaretif.repositories.ComentarioRepository;
+import edu.ifrn.itaretif.repository.ComentarioRepository;
 import edu.ifrn.itaretif.repository.SetorRepository;
 
 @Controller
-public class ControllerSite {
+public class PortalController {
 	
 	@Autowired
 	private SetorRepository sr;
@@ -20,12 +20,12 @@ public class ControllerSite {
 	
 	@RequestMapping("/")
 	public String index() {
-		return "inicio";
+		return "/portal/inicio";
 	}
 	
 	@RequestMapping(value="/campus", method= RequestMethod.GET)
 	public ModelAndView listarSetores(){
-    	ModelAndView mv = new ModelAndView("o campus");
+    	ModelAndView mv = new ModelAndView("/portal/o campus");
     	Iterable<Setor> setores = sr.findAll();
     	mv.addObject("setores", setores);
     	return mv;
@@ -35,22 +35,22 @@ public class ControllerSite {
 	
 	@RequestMapping("/regras")
 	public String regras() {
-		return "regras";
+		return "/portal/regras";
 	}
 	
 	@RequestMapping("/lajes")
 	public String lajes() {
-		return "lajes";
+		return "/portal/lajes";
 	}
 	
 	@RequestMapping("/mapeamento")
 	public String mapeamento() {
-		return "mapeamento";
+		return "/portal/mapeamento";
 	}
 	
 	@RequestMapping("/cadastro")
 	public String cadastroPagina(){
-		return "paginaDeCadastro";
+		return "/cadastro/paginaDeCadastro";
 	}
 
 //	@RequestMapping("/sobre")
@@ -60,37 +60,37 @@ public class ControllerSite {
 	
 	@RequestMapping("/planta1")
 	public String palnta1() {
-		return "planta1";
+		return "/portal/planta1";
 	}
 	
 	@RequestMapping("/planta2")
 	public String palnta2() {
-		return "planta2";
+		return "/portal/planta2";
 	}
 	
 	@RequestMapping("/planta3")
 	public String palnta3() {
-		return "planta3";
+		return "/portal/planta3";
 	}
 	
 	@RequestMapping("/planta4")
 	public String palnta4() {
-		return "planta4";
+		return "/portal/planta4";
 	}
 	
 	@RequestMapping("/planta5")
 	public String palnta5() {
-		return "planta5";
+		return "/portal/planta5";
 	}
 	
 	@RequestMapping("/planta6")
 	public String palnta6() {
-		return "planta6";
+		return "/portal/planta6";
 	}
 	
 	@RequestMapping("/planta7")
 	public String palnta7() {
-		return "planta7";
+		return "/portal/planta7";
 	}
 	
 }

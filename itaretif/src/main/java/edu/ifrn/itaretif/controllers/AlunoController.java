@@ -22,7 +22,7 @@ import edu.ifrn.itaretif.repository.UsuarioRepository;
 
 
 @Controller
-public class ControllerAluno {
+public class AlunoController {
 	
 	@Autowired
 	private UsuarioRepository ur;
@@ -33,7 +33,7 @@ public class ControllerAluno {
 	
 	@RequestMapping(value="/cadastroAluno", method=RequestMethod.GET)
 	public String cadastroUsuario(){
-		return "cadastroAluno";
+		return "cadastro/cadastroAluno";
 	}
 	
 	@RequestMapping(value="/cadastroAluno", method=RequestMethod.POST)

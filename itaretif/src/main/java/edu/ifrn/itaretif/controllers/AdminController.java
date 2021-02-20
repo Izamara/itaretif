@@ -19,7 +19,7 @@ import edu.ifrn.itaretif.repository.RoleRepository;
 import edu.ifrn.itaretif.repository.UsuarioRepository;
 
 @Controller
-public class ControllerAdmin {
+public class AdminController {
 	
 		@Autowired
 		private UsuarioRepository ur;
@@ -29,7 +29,7 @@ public class ControllerAdmin {
 		
 		@RequestMapping(value="/admin/inicio", method=RequestMethod.GET)
 		public String inicioAdmin(){
-			return "inicioAdmin";
+			return "/adm/inicioAdmin";
 		}
 		
 		@RequestMapping(value="/admin/inicio", method=RequestMethod.POST)
@@ -55,7 +55,7 @@ public class ControllerAdmin {
 		
 		@RequestMapping(value="/admin/listar", method=RequestMethod.GET)
 			public ModelAndView ListaDeUsuarios(){
-			ModelAndView mv = new ModelAndView("lista");
+			ModelAndView mv = new ModelAndView("/adm/lista");
 			Iterable<Usuario> usuarios = ur.findAll();
 			mv.addObject("usuarios", usuarios);
 			return mv;
@@ -64,7 +64,7 @@ public class ControllerAdmin {
 		
 		@RequestMapping(value="/editarUsuario/{matricula}", method=RequestMethod.GET)
 			public ModelAndView alterarUsuario(@PathVariable("matricula") String matricula){
-				ModelAndView mv = new ModelAndView("formEdit");
+				ModelAndView mv = new ModelAndView("/adm/formEdit");
 				Usuario usuario = ur.findByMatricula(matricula);
 				mv.addObject("usuario", usuario);
 				return mv;
@@ -87,7 +87,7 @@ public class ControllerAdmin {
 	}
 		
 		
-		@RequestMapping("/deletar")
+		@RequestMapping("/deletarUsuario")
 		public String deletarUsuario(String matricula){
 			Usuario usuario = ur.findByMatricula(matricula);
 			ur.delete(usuario);
@@ -97,7 +97,7 @@ public class ControllerAdmin {
 		@RequestMapping("/{matricula}")
 		public ModelAndView detalharUsuario(@PathVariable("matricula") String matricula){
 			Usuario usuario = ur.findByMatricula(matricula);
-			ModelAndView mv = new ModelAndView("usuarioDetalhes");
+			ModelAndView mv = new ModelAndView("/adm/usuarioDetalhes");
 			mv.addObject("usuario", usuario);
 			return mv;
 		}
