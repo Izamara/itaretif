@@ -48,7 +48,6 @@
 					<th>ID:</th>
 					<th>Nome:</th>
 					<th>Matrícula:</th>
-					<th>Senha:</th>
 					<th>Ações</th>
 							
 				</tr>
@@ -58,7 +57,6 @@
 					<td><samp th:text= ${usuario.id}></samp></td>
 					<td><a th:href="${(#mvc.url('AC#detalharUsuario').arg(0, usuario.matricula)).build()}"><samp th:text= ${usuario.nome}></samp></a></td>
 					<td><samp th:text= ${usuario.matricula}></samp></td>
-					<td><samp th:text= ${usuario.senha}></samp></td>
 					<td>
 						<a th:href="@{/editarUsuario/{matricula}(matricula=${usuario.matricula})}">
 							<button type="button" class="btn btn-outline-success" style="border-color: #25A25A!important;">
